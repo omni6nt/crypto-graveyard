@@ -1,0 +1,34 @@
+{
+  "id": "celsius-network",
+  "name": "Celsius Network",
+  "shortDescription": "[PLACEHOLDER — research required]",
+  "classification": "[PLACEHOLDER — research required]",
+  "researchCutoff": "[PLACEHOLDER — research required]",
+  "identity": {
+    "description": "[PLACEHOLDER — research required]",
+    "sourceIds": []
+  },
+  "background": {
+    "description": "[PLACEHOLDER — research required]",
+    "sourceIds": []
+  },
+  "incident": {
+    "description": "[PLACEHOLDER — research required]",
+    "claimType": "[PLACEHOLDER]",
+    "sourceIds": []
+  },
+  "causeAnalysis": {
+    "description": "[PLACEHOLDER — research required]",
+    "sourceIds": []
+  },
+  "timeline": [],
+  "warningSigns": [],
+  "aftermath": {
+    "description": "[PLACEHOLDER — research required]",
+    "sourceIds": []
+  },
+  "lessons": [],
+  "sources": [],
+  "intuitionReferences": [],
+  "examination": []
+}

@@ -1,0 +1,10 @@
+[
+  { "id": "ftx",                  "name": "FTX" },
+  { "id": "mt-gox",               "name": "Mt. Gox" },
+  { "id": "terra-luna",           "name": "Terra / LUNA" },
+  { "id": "bitconnect",           "name": "BitConnect" },
+  { "id": "onecoin",              "name": "OneCoin" },
+  { "id": "three-arrows-capital", "name": "Three Arrows Capital" },
+  { "id": "celsius-network",      "name": "Celsius Network" },
+  { "id": "thodex",               "name": "Thodex" }
+]
