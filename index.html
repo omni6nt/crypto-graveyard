@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crypto Graveyard — an educational investigation experience exploring consequential failures, collapses, and misconduct in cryptocurrency. Investigate the evidence. Learn the lessons.">
+  <title>Crypto Graveyard — Where Failed Projects Rest in Peace</title>
+
+  <!-- Google Fonts: Cinzel (display headings) and Merriweather (narrative body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
+
+  <!-- Stylesheets — load order: tokens first, then built on top -->
+  <link rel="stylesheet" href="src/css/tokens.css">
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/layout.css">
+  <link rel="stylesheet" href="src/css/navigation.css">
+  <link rel="stylesheet" href="src/css/components.css">
+</head>
+<body>
+
+  <!-- Skip-to-content link: first focusable element on the page.
+       Class "skip-to-content" matches the selector in navigation.css.
+       Visually hidden until focused by keyboard; jumps focus to <main>. -->
+  <a class="skip-to-content" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-brand">
+      <span class="site-name">Crypto Graveyard</span>
+      <span class="site-tagline">Where Failed Projects Rest in Peace</span>
+    </div>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <!-- Toggle button: hidden by default via CSS.
+           Shown on mobile only when nav.js adds "js-nav-ready" to this element.
+           Without JavaScript, the nav list is always visible and this button
+           is never displayed, so it cannot create a nonfunctional control. -->
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" type="button">
+        <span class="visually-hidden">Open navigation menu</span>
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav-list" id="nav-list" role="list">
+        <li><a href="#cemetery" aria-current="page">The Cemetery</a></li>
+        <li><a href="#case-archives">Case Archives</a></li>
+        <li><a href="#journal">The Journal</a></li>
+        <li><a href="#about">About the Graveyard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- tabindex="-1" allows the skip link to move focus here programmatically
+       without placing <main> in the natural tab order. -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- ── The Cemetery ─────────────────────────────────────────────────── -->
+    <section id="cemetery" class="site-section" aria-labelledby="cemetery-heading">
+      <div class="container">
+        <h1 id="cemetery-heading" class="section-heading">The Cemetery</h1>
+        <p>The cemetery environment will appear here. Select a grave to begin your investigation.</p>
+      </div>
+    </section>
+
+    <!-- ── Case Archives ────────────────────────────────────────────────── -->
+    <section id="case-archives" class="site-section" aria-labelledby="archives-heading">
+      <div class="container">
+        <h2 id="archives-heading" class="section-heading">Case Archives</h2>
+
+        <!-- aria-live="polite": screen readers announce content changes
+             (loading, loaded, error) without interrupting the user.
+             Static fallback text is shown when JavaScript is unavailable. -->
+        <div id="case-list-region" aria-live="polite" aria-label="Cases">
+          <p>Case content will be listed here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── The Journal ──────────────────────────────────────────────────── -->
+    <section id="journal" class="site-section" aria-labelledby="journal-heading">
+      <div class="container">
+        <h2 id="journal-heading" class="section-heading">The Journal</h2>
+        <p>Your investigation progress will appear here.</p>
+      </div>
+    </section>
+
+    <!-- ── About the Graveyard ──────────────────────────────────────────── -->
+    <section id="about" class="site-section" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading" class="section-heading">About the Graveyard</h2>
+        <p>Methodology, research standards, claim labels, and educational purpose will be explained here.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Crypto Graveyard &mdash; Educational purposes only. Not financial advice.</p>
+  </footer>
+
+  <!-- JavaScript entry point will be added in TASK-012. -->
+
+</body>
+</html>

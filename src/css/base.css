@@ -1,0 +1,86 @@
+/*
+ * base.css
+ * Global body styles, heading hierarchy, typography, links, and focus.
+ * All color values must reference var(--color-*) tokens from tokens.css.
+ */
+
+/* ── Body ──────────────────────────────────────────────────────────────── */
+
+body {
+  background-color: var(--color-void-black);
+  color: var(--color-bone-ivory);
+  font-family: var(--font-narrative);
+  font-size: var(--text-base);
+  line-height: 1.6;
+}
+
+/* ── Heading hierarchy ─────────────────────────────────────────────────── */
+/*
+ * h1–h3 use --font-display (Cinzel) for the gothic Victorian atmosphere.
+ * h4–h6 fall back to --font-narrative so dense evidence sections remain
+ * readable without excessive weight.
+ */
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  color: var(--color-bone-ivory);
+}
+
+h1 { font-size: var(--text-4xl); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-2xl); }
+h4 { font-size: var(--text-xl);  font-family: var(--font-narrative); }
+h5 { font-size: var(--text-lg);  font-family: var(--font-narrative); }
+h6 { font-size: var(--text-base); font-family: var(--font-narrative); }
+
+/* ── Links ──────────────────────────────────────────────────────────────── */
+
+a {
+  color: var(--color-moonlight-lavender);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--color-bone-ivory);
+}
+
+a:visited {
+  color: var(--color-fog-grey);
+}
+
+/* ── Global focus indicator ─────────────────────────────────────────────── */
+/*
+ * Uses :focus-visible so the outline appears for keyboard users but not
+ * on mouse clicks. Never suppressed. Never set to outline: none.
+ *
+ * Color: --color-moonlight-lavender (#B8A2D6)
+ * Verified contrast ratios (WCAG 2.1 relative luminance):
+ *   - On void-black   (#100D16): 8.41:1  ✓ exceeds 3:1 minimum
+ *   - On deep-charcoal (#1B1722): 7.70:1  ✓ exceeds 3:1 minimum
+ *   - On cemetery-purple (#30213F): 6.49:1  ✓ exceeds 3:1 minimum
+ *
+ * Note: haunted-violet (#7047A3) was considered but fails 3:1 on all dark
+ * backgrounds (maximum 2.86:1) and must NOT be used as a focus indicator.
+ */
+
+:focus-visible {
+  outline: 2px solid var(--color-moonlight-lavender);
+  outline-offset: 3px;
+}
+
+/* ── Utility: site name and tagline ─────────────────────────────────────── */
+
+.site-name {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-bone-ivory);
+  letter-spacing: 0.05em;
+}
+
+.site-tagline {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-fog-grey);
+}

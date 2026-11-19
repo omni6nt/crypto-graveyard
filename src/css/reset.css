@@ -1,0 +1,37 @@
+/*
+ * reset.css
+ * Minimal browser-default reset for Crypto Graveyard.
+ *
+ * Rules:
+ * - Normalises box-sizing, margin, and padding only.
+ * - Does NOT reset outline or any focus property.
+ *   Focus indicators are defined in base.css and must never be suppressed.
+ * - ul[role="list"] removes bullet styling only where the role is explicitly
+ *   set, preserving list semantics in Safari for all other lists.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol,
+figure,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}

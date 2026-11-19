@@ -1,0 +1,73 @@
+/*
+ * tokens.css
+ * CSS custom properties for Crypto Graveyard.
+ * All color values are drawn from the approved palette.
+ * Do not add colors outside this file without project-owner approval.
+ *
+ * Font loading: Cinzel and Merriweather are loaded in index.html via
+ * <link rel="preconnect"> and <link rel="stylesheet"> pointing to
+ * Google Fonts. This file only defines the font-family custom properties;
+ * it does not load the fonts itself.
+ */
+
+:root {
+  /* ── Color palette ───────────────────────────────────────────────────
+   * Ten approved colors. Use these tokens everywhere; never use raw hex
+   * values in other CSS files.
+   * ------------------------------------------------------------------ */
+  --color-void-black:        #100D16;
+  --color-deep-charcoal:     #1B1722;
+  --color-cemetery-purple:   #30213F;
+  --color-haunted-violet:    #7047A3;
+  --color-moonlight-lavender:#B8A2D6;
+  --color-blood-red:         #8E252B;
+  --color-antique-gold:      #B18A53;
+  --color-aged-parchment:    #D7C3A0;
+  --color-bone-ivory:        #E7DDCF;
+  --color-fog-grey:          #8E8995;
+
+  /* ── Typography ──────────────────────────────────────────────────────
+   * --font-display   : Cinzel — display headings (h1–h3, site name)
+   * --font-narrative : Merriweather — body copy, case narrative text
+   * --font-ui        : system sans-serif — controls, labels, dense evidence
+   * ------------------------------------------------------------------ */
+  --font-display:   'Cinzel', 'Palatino Linotype', Georgia, serif;
+  --font-narrative: 'Merriweather', Georgia, 'Times New Roman', serif;
+  --font-ui:        system-ui, -apple-system, BlinkMacSystemFont,
+                    'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* ── Type scale ──────────────────────────────────────────────────────
+   * Fluid values using clamp(min, preferred, max).
+   * Base: 1rem = 16px browser default.
+   * ------------------------------------------------------------------ */
+  --text-xs:   clamp(0.694rem, 0.65rem + 0.22vw,  0.800rem);
+  --text-sm:   clamp(0.833rem, 0.79rem + 0.22vw,  0.950rem);
+  --text-base: clamp(1.000rem, 0.95rem + 0.25vw,  1.125rem);
+  --text-lg:   clamp(1.200rem, 1.13rem + 0.35vw,  1.375rem);
+  --text-xl:   clamp(1.440rem, 1.34rem + 0.50vw,  1.688rem);
+  --text-2xl:  clamp(1.728rem, 1.59rem + 0.69vw,  2.063rem);
+  --text-3xl:  clamp(2.074rem, 1.88rem + 0.97vw,  2.563rem);
+  --text-4xl:  clamp(2.488rem, 2.24rem + 1.24vw,  3.188rem);
+
+  /* ── Spacing scale ───────────────────────────────────────────────────
+   * Multiples of 4px.
+   * --space-1 = 4px, --space-2 = 8px, --space-4 = 16px, etc.
+   * ------------------------------------------------------------------ */
+  --space-1:  0.25rem;   /*  4px */
+  --space-2:  0.5rem;    /*  8px */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+
+  /* ── Transitions ─────────────────────────────────────────────────────
+   * Only use --transition-base inside
+   * @media (prefers-reduced-motion: no-preference) blocks.
+   * Never reference it outside that media query.
+   * ------------------------------------------------------------------ */
+  --transition-base: 200ms ease;
+}
