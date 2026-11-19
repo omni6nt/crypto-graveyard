@@ -1,34 +1,416 @@
 {
   "id": "three-arrows-capital",
   "name": "Three Arrows Capital",
-  "shortDescription": "[PLACEHOLDER — research required]",
-  "classification": "[PLACEHOLDER — research required]",
-  "researchCutoff": "[PLACEHOLDER — research required]",
+  "shortDescription": "A highly leveraged crypto investment fund entered liquidation in June 2022, transmitting losses through interconnected lenders and counterparties.",
+  "classification": "Crypto investment fund collapse and cross-border liquidation",
+  "researchCutoff": "2026-11-19",
   "identity": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Three Arrows Capital (3AC) was a cryptocurrency and digital-asset investment fund incorporated in the British Virgin Islands, with operations in Singapore and elsewhere. It traded crypto assets and borrowed from multiple lenders and counterparties. The Singapore Court of Appeal's 2025 judgment describes the fund's corporate structure and its directors; government and court records describe the subsequent cross-border liquidation.",
+    "sourceIds": [
+      "three-arrows-capital-src-001",
+      "three-arrows-capital-src-002",
+      "three-arrows-capital-src-003",
+      "three-arrows-capital-src-004"
+    ]
   },
   "background": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "3AC operated as a large crypto investment fund during a period of rising digital-asset prices. It had extensive borrowing relationships with crypto lenders and counterparties. Court-document reporting identified approximately $3.5 billion owed to 27 crypto firms, including large exposures reported for Genesis and Voyager. These amounts are creditor claims and reported exposures, not necessarily final allowed claims or cash recoveries.",
+    "sourceIds": [
+      "three-arrows-capital-src-001",
+      "three-arrows-capital-src-005"
+    ]
   },
   "incident": {
-    "description": "[PLACEHOLDER — research required]",
-    "claimType": "[PLACEHOLDER]",
-    "sourceIds": []
+    "description": "Following the market downturn and Terra ecosystem collapse in May 2022, 3AC suffered substantial losses and lenders issued default notices. The BVI High Court placed the fund into liquidation on June 27, 2022 and appointed joint liquidators. The fund sought Chapter 15 protection in the United States on July 1, 2022. The FSOC report described the failure as a source of contagion across crypto markets, with counterparties including Voyager and Genesis suffering large exposures. In 2025, Singapore's Court of Appeal upheld important disclosure orders sought by liquidators against the fund's directors, while varying the orders concerning examination of one director.",
+    "claimType": "court_finding",
+    "sourceIds": [
+      "three-arrows-capital-src-001",
+      "three-arrows-capital-src-002",
+      "three-arrows-capital-src-003",
+      "three-arrows-capital-src-004",
+      "three-arrows-capital-src-005"
+    ]
   },
   "causeAnalysis": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Analysis: 3AC's failure illustrates how leverage and concentrated counterparty exposure can turn a market downturn into a network-wide credit event. Losses associated with Terra and the broader crypto sell-off weakened the fund while lenders and counterparties had significant claims against it. The sources reviewed establish liquidation, cross-border proceedings and large reported creditor exposures, but do not provide a complete independently verified portfolio-level attribution of every loss. The case should therefore avoid presenting one trade or one token as the sole cause.",
+    "sourceIds": [
+      "three-arrows-capital-src-001",
+      "three-arrows-capital-src-002",
+      "three-arrows-capital-src-003",
+      "three-arrows-capital-src-004",
+      "three-arrows-capital-src-005"
+    ]
   },
-  "timeline": [],
-  "warningSigns": [],
+  "timeline": [
+    {
+      "date": "2022-05",
+      "event": "The Terra ecosystem collapse and broader crypto market decline contributed to financial stress at 3AC, according to court-document reporting and government analysis.",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "three-arrows-capital-src-001",
+        "three-arrows-capital-src-005"
+      ]
+    },
+    {
+      "date": "2022-06",
+      "event": "Lenders issued default notices and creditors sought liquidation as 3AC's financial distress became apparent.",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "three-arrows-capital-src-001",
+        "three-arrows-capital-src-005"
+      ]
+    },
+    {
+      "date": "2022-06-27",
+      "event": "The BVI High Court ordered liquidation of Three Arrows Capital and appointed joint liquidators.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "three-arrows-capital-src-003",
+        "three-arrows-capital-src-004"
+      ]
+    },
+    {
+      "date": "2022-07-01",
+      "event": "The joint liquidators filed a Chapter 15 petition in the U.S. Bankruptcy Court for the Southern District of New York.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "three-arrows-capital-src-001",
+        "three-arrows-capital-src-002"
+      ]
+    },
+    {
+      "date": "2022-07",
+      "event": "Court-document reporting described approximately $3.5 billion owed to 27 crypto firms.",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "three-arrows-capital-src-005"
+      ]
+    },
+    {
+      "date": "2022-08-22",
+      "event": "Singapore recognized the BVI liquidation proceedings as a foreign main proceeding, as recounted in later Singapore judgments.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "three-arrows-capital-src-003",
+        "three-arrows-capital-src-004"
+      ]
+    },
+    {
+      "date": "2024-04-12",
+      "event": "Singapore's Appellate Division dismissed an application for permission to appeal in litigation involving the liquidators' service efforts.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "three-arrows-capital-src-003"
+      ]
+    },
+    {
+      "date": "2025-06-24",
+      "event": "Singapore Court of Appeal delivered judgment on directors' disclosure and examination orders sought by the liquidators.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "three-arrows-capital-src-003"
+      ]
+    }
+  ],
+  "warningSigns": [
+    {
+      "title": "Large borrowing across counterparties",
+      "description": "3AC had significant lending relationships across crypto firms, with court-document reporting identifying billions in creditor exposures.",
+      "evidenceAvailable": "Individual counterparties could observe their own exposure, but the full network-wide concentration became clearer through liquidation disclosures.",
+      "visibility": "hindsight",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "three-arrows-capital-src-005"
+      ]
+    },
+    {
+      "title": "Market and ecosystem concentration",
+      "description": "The fund was exposed to a crypto market downturn and losses linked to the Terra collapse.",
+      "evidenceAvailable": "Market price declines were public; the fund's exact portfolio concentration and leverage were not fully visible to outside observers.",
+      "visibility": "during_incident",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "three-arrows-capital-src-001",
+        "three-arrows-capital-src-005"
+      ]
+    },
+    {
+      "title": "Lender defaults and liquidation petitions",
+      "description": "Multiple lenders issued default notices and creditors sought liquidation as the fund failed to meet obligations.",
+      "evidenceAvailable": "Default notices and court filings were observable to affected counterparties during the crisis, not necessarily to the wider public beforehand.",
+      "visibility": "during_incident",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "three-arrows-capital-src-001",
+        "three-arrows-capital-src-005"
+      ]
+    },
+    {
+      "title": "Cross-border opacity and record access",
+      "description": "Liquidators later sought court orders to compel directors to disclose dealings and produce company records.",
+      "evidenceAvailable": "The need for these orders emerged after liquidation; it highlights the importance of record access and governance controls in hindsight.",
+      "visibility": "hindsight",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "three-arrows-capital-src-003"
+      ]
+    },
+    {
+      "title": "Counterparty contagion",
+      "description": "The FSOC described spillovers to firms such as Voyager and other lenders after 3AC's distress.",
+      "evidenceAvailable": "The contagion became visible as counterparties restricted services and entered their own restructuring or bankruptcy processes.",
+      "visibility": "during_incident",
+      "claimType": "documented_fact",
+      "sourceIds": [
+        "three-arrows-capital-src-001"
+      ]
+    }
+  ],
   "aftermath": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "3AC entered BVI liquidation in June 2022, followed by Chapter 15 proceedings in the United States and recognition of the foreign liquidation in Singapore. Government analysis described the fund's collapse as a source of crypto-market contagion. Court-document reporting identified approximately $3.5 billion owed to 27 crypto firms, but this is a reported creditor-claim figure rather than a final recovery amount. Singapore court proceedings continued into 2025, including appellate litigation over directors' disclosure and examination. The current total creditor recovery and final liquidation outcome were not established by the sources reviewed for this batch and are left open for further verification.",
+    "sourceIds": [
+      "three-arrows-capital-src-001",
+      "three-arrows-capital-src-002",
+      "three-arrows-capital-src-003",
+      "three-arrows-capital-src-004",
+      "three-arrows-capital-src-005"
+    ]
   },
-  "lessons": [],
-  "sources": [],
+  "lessons": [
+    {
+      "audience": "users",
+      "lesson": "A fund's reputation or reported assets do not remove counterparty risk. Ask how leverage, collateral and liquidity are managed, especially when many firms are exposed to the same market.",
+      "sourceIds": [
+        "three-arrows-capital-src-001",
+        "three-arrows-capital-src-005"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "Monitor concentration across borrowers, collateral and counterparties; stress-test correlated declines rather than treating each loan as independent.",
+      "sourceIds": [
+        "three-arrows-capital-src-001",
+        "three-arrows-capital-src-005"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "Maintain accurate books, records and governance arrangements that remain accessible to independent liquidators and courts during insolvency.",
+      "sourceIds": [
+        "three-arrows-capital-src-003"
+      ]
+    },
+    {
+      "audience": "users",
+      "lesson": "Understand that a failure at one leveraged intermediary can impair lenders and platforms far beyond the original fund.",
+      "sourceIds": [
+        "three-arrows-capital-src-001",
+        "three-arrows-capital-src-005"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "three-arrows-capital-src-001",
+      "title": "Report on Digital Asset Financial Stability Risks and Regulation 2022",
+      "publisher": "U.S. Financial Stability Oversight Council",
+      "author": null,
+      "date": "2022-10-03",
+      "url": "https://home.treasury.gov/system/files/FSOC-Digital-Assets-Report-2022.pdf",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "3AC Chapter 15 filing after BVI liquidation order",
+        "Crypto counterparty contagion and Voyager exposure"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Government financial-stability report summarizing public reports."
+    },
+    {
+      "id": "three-arrows-capital-src-002",
+      "title": "In Re: Three Arrows Capital Ltd and Christopher Farmer — Chapter 15 case",
+      "publisher": "U.S. Bankruptcy Court, Southern District of New York",
+      "author": null,
+      "date": "2022-12-29",
+      "url": "https://www.nysb.uscourts.gov/content/re-22-10920-mg-three-arrows-capital-ltd-and-christopher-farmer",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "U.S. Chapter 15 proceedings and court orders involving foreign representatives"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "three-arrows-capital-src-003",
+      "title": "Zhu Su v Three Arrows Capital Ltd [2025] SGCA 31",
+      "publisher": "Singapore Court of Appeal",
+      "author": null,
+      "date": "2025-06-24",
+      "url": "https://www.elitigation.sg/gd/s/2025_SGCA_31",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Directors' disclosure duties and examination orders",
+        "Liquidators' cross-border efforts to obtain records",
+        "Court procedural history and director conduct"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "three-arrows-capital-src-004",
+      "title": "Three Arrows Capital liquidation recognition application",
+      "publisher": "Joint Liquidators / BVI High Court filing hosted by liquidators",
+      "author": null,
+      "date": "2022-07-09",
+      "url": "https://3acliquidation.com/wp-content/uploads/2022/07/2022.07.09-OA-317-of-2022.pdf",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "BVI liquidation proceedings and appointment of joint liquidators",
+        "Recognition in Singapore"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "three-arrows-capital-src-005",
+      "title": "Three Arrows Capital creditors lent bankrupt fund $3.5 billion, court documents show",
+      "publisher": "The Block",
+      "author": "Yogita Khatri; Ryan Weeks; Tim Copeland",
+      "date": "2022-07-18",
+      "url": "https://www.theblock.co/news/regulation/2022-07-18-three-arrows-capital-3ac-creditors-list-3-5-billion-crypto-affidavits-158169",
+      "sourceType": "secondary",
+      "claimsSupported": [
+        "Creditor exposure of approximately $3.5bn across 27 crypto firms",
+        "Genesis and Voyager loan exposures"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Secondary reporting based on liquidator affidavits and court documents."
+    }
+  ],
   "intuitionReferences": [],
-  "examination": []
+  "examination": [
+    {
+      "id": "three-arrows-capital-exam-001",
+      "prompt": "What kind of firm was Three Arrows Capital?",
+      "options": [
+        "A retail crypto exchange.",
+        "A cryptocurrency and digital-asset investment fund.",
+        "A stablecoin issuer.",
+        "A government regulator."
+      ],
+      "defensibleAnswers": [
+        "A cryptocurrency and digital-asset investment fund."
+      ],
+      "explanation": "Singapore court materials describe 3AC as a BVI-incorporated fund trading cryptocurrencies and other digital assets.",
+      "visibility": "pre_incident",
+      "difficulty": "low",
+      "learningObjective": "Identify the business model.",
+      "sourceIds": [
+        "three-arrows-capital-src-003"
+      ]
+    },
+    {
+      "id": "three-arrows-capital-exam-002",
+      "prompt": "What made 3AC's distress systemically consequential in the crypto market?",
+      "options": [
+        "It had no lenders or counterparties.",
+        "Multiple crypto lenders and counterparties had large exposures to the fund, transmitting losses across firms.",
+        "It operated the only Bitcoin blockchain.",
+        "It guaranteed all customer deposits in the sector."
+      ],
+      "defensibleAnswers": [
+        "Multiple crypto lenders and counterparties had large exposures to the fund, transmitting losses across firms."
+      ],
+      "explanation": "The FSOC report describes contagion and major lender exposures; court-document reporting identified billions owed to numerous firms. Counterparty concentration can spread a firm's failure beyond its own investors.",
+      "visibility": "hindsight",
+      "difficulty": "medium",
+      "learningObjective": "Understand interconnected counterparty risk.",
+      "sourceIds": [
+        "three-arrows-capital-src-001",
+        "three-arrows-capital-src-005"
+      ]
+    },
+    {
+      "id": "three-arrows-capital-exam-003",
+      "prompt": "Which event formally began the BVI liquidation process?",
+      "options": [
+        "The 2025 Singapore Court of Appeal judgment.",
+        "The BVI High Court's June 27, 2022 liquidation order and appointment of joint liquidators.",
+        "The Celsius bankruptcy filing.",
+        "The Terra genesis block."
+      ],
+      "defensibleAnswers": [
+        "The BVI High Court's June 27, 2022 liquidation order and appointment of joint liquidators."
+      ],
+      "explanation": "The liquidators' court filings and later Singapore decisions identify June 27, 2022 as the BVI liquidation date.",
+      "visibility": "during_incident",
+      "difficulty": "medium",
+      "learningObjective": "Place insolvency proceedings in chronological context.",
+      "sourceIds": [
+        "three-arrows-capital-src-003",
+        "three-arrows-capital-src-004"
+      ]
+    },
+    {
+      "id": "three-arrows-capital-exam-004",
+      "prompt": "What was the significance of 3AC's Chapter 15 proceeding in the United States?",
+      "options": [
+        "It created a new token.",
+        "It sought U.S. recognition and assistance for the BVI foreign liquidation proceeding.",
+        "It reversed the BVI liquidation.",
+        "It guaranteed repayment of every lender."
+      ],
+      "defensibleAnswers": [
+        "It sought U.S. recognition and assistance for the BVI foreign liquidation proceeding."
+      ],
+      "explanation": "Chapter 15 is a cross-border insolvency mechanism. It is not a guarantee of creditor recovery or a new operating business.",
+      "visibility": "hindsight",
+      "difficulty": "high",
+      "learningObjective": "Understand cross-border insolvency.",
+      "sourceIds": [
+        "three-arrows-capital-src-001",
+        "three-arrows-capital-src-002"
+      ]
+    },
+    {
+      "id": "three-arrows-capital-exam-005",
+      "prompt": "What is the central governance lesson from the 2025 Singapore Court of Appeal case?",
+      "options": [
+        "Directors can ignore liquidators once a company fails.",
+        "Liquidators may seek records and examination of directors to reconstruct a failed company's affairs; cooperation and record preservation matter.",
+        "A director is automatically criminally guilty after liquidation.",
+        "A liquidation ends all disclosure obligations."
+      ],
+      "defensibleAnswers": [
+        "Liquidators may seek records and examination of directors to reconstruct a failed company's affairs; cooperation and record preservation matter."
+      ],
+      "explanation": "The Singapore Court of Appeal addressed disclosure and examination orders sought by liquidators. The case concerns insolvency cooperation and court procedure, not an automatic finding of criminal guilt.",
+      "visibility": "hindsight",
+      "difficulty": "high",
+      "learningObjective": "Understand director accountability and record access.",
+      "sourceIds": [
+        "three-arrows-capital-src-003"
+      ]
+    },
+    {
+      "id": "three-arrows-capital-exam-006",
+      "prompt": "Which risk should a lender have assessed before extending large loans to 3AC?",
+      "options": [
+        "Only the fund's social-media following.",
+        "Leverage, collateral quality, concentration, liquidity and correlated exposure to the same crypto market shocks.",
+        "Whether the fund had a popular logo.",
+        "Whether the borrower promised guaranteed profits."
+      ],
+      "defensibleAnswers": [
+        "Leverage, collateral quality, concentration, liquidity and correlated exposure to the same crypto market shocks."
+      ],
+      "explanation": "The public record describes large exposures and contagion after market stress. Lenders need independent collateral and concentration controls rather than relying on reputation or borrower assurances.",
+      "visibility": "pre_incident",
+      "difficulty": "high",
+      "learningObjective": "Assess lending and counterparty risk.",
+      "sourceIds": [
+        "three-arrows-capital-src-001",
+        "three-arrows-capital-src-005"
+      ]
+    }
+  ]
 }

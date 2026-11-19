@@ -1,0 +1,20 @@
+CRYPTO GRAVEYARD — PHASE 2 CORONER PORTRAIT
+
+Replaces:
+- index.html
+- src/css/components.css
+- docs/kiro-log.md
+
+Adds:
+- assets/coroner-portrait.webp
+
+Install:
+1. Stop the server with Ctrl+C.
+2. Back up the three replaced files.
+3. Extract this ZIP into C:\dev\crypto-graveyard, replacing files.
+4. Restart: npx http-server . -p 8000
+5. Hard refresh: Ctrl+Shift+R.
+
+The portrait is an optimized crop from the cinematic concept. It is a real illustrated image, but not a transparent character sprite. Separate poses, hands, soil, and gate layers are still required for final emergence animation.
+
+No case data or research files are changed. No commit or push.

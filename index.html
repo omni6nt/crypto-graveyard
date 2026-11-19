@@ -6,10 +6,13 @@
   <meta name="description" content="Crypto Graveyard — an educational investigation experience exploring consequential failures, collapses, and misconduct in cryptocurrency. Investigate the evidence. Learn the lessons.">
   <title>Crypto Graveyard — Where Failed Projects Rest in Peace</title>
 
-  <!-- Google Fonts: Cinzel (display headings) and Merriweather (narrative body) -->
+  <!-- Google Fonts: Pirata One (main title), Grenze Gotisch (section headings),
+       and Merriweather (narrative body). -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Grenze+Gotisch:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
   <!-- Stylesheets — load order: tokens first, then built on top -->
   <link rel="stylesheet" href="src/css/tokens.css">
@@ -18,6 +21,7 @@
   <link rel="stylesheet" href="src/css/layout.css">
   <link rel="stylesheet" href="src/css/navigation.css">
   <link rel="stylesheet" href="src/css/components.css">
+  <link rel="stylesheet" href="src/css/gate-cinematic.css">
 </head>
 <body>
 
@@ -43,63 +47,111 @@
       </button>
 
       <ul class="nav-list" id="nav-list" role="list">
-        <li><a href="#cemetery" aria-current="page">The Cemetery</a></li>
-        <li><a href="#case-archives">Case Archives</a></li>
-        <li><a href="#journal">The Journal</a></li>
-        <li><a href="#about">About the Graveyard</a></li>
+        <li><a href="#cemetery" data-scene-target="cemetery" aria-current="page">The Cemetery</a></li>
+        <li><a href="#case-archives" data-scene-target="grounds">Case Archives</a></li>
+        <li><a href="#journal" data-scene-target="journal">The Journal</a></li>
+        <li><a href="#about" data-scene-target="about">About the Graveyard</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- tabindex="-1" allows the skip link to move focus here programmatically
        without placing <main> in the natural tab order. -->
-  <main id="main-content" tabindex="-1">
-
-    <!-- ── The Cemetery ─────────────────────────────────────────────────── -->
-    <section id="cemetery" class="site-section" aria-labelledby="cemetery-heading">
-      <div class="container">
-        <h1 id="cemetery-heading" class="section-heading">The Cemetery</h1>
-        <p>The cemetery environment will appear here. Select a grave to begin your investigation.</p>
+  <main id="main-content" tabindex="-1" class="scene-stage">
+    <section class="app-scene app-scene--active cinematic" id="cemetery" data-scene="cemetery" aria-labelledby="hero-title" aria-hidden="false">
+      <div class="cinematic__backdrop" aria-hidden="true"></div>
+      <div class="cinematic__vignette" aria-hidden="true"></div>
+      <div class="gate-stage" id="gate-stage" aria-hidden="true">
+        <div class="gate-leaf gate-leaf--left">
+          <img src="assets/gate-leaf.svg" alt="">
+        </div>
+        <div class="gate-leaf gate-leaf--right">
+          <img src="assets/gate-leaf.svg" alt="">
+        </div>
+        <div class="gate-lock" id="gate-lock"><span>✥</span></div>
+        <div class="gate-glow"></div>
       </div>
-    </section>
+      <div class="cinematic-camera" aria-hidden="true"></div>
+      <div class="cinematic__masthead">
+        <p class="cinematic__eyebrow">An archive of ambition, collapse & consequence</p>
+        <h1 id="hero-title">Crypto Graveyard</h1>
+        <p class="cinematic__tagline">Where Failed Projects Rest in Peace.</p>
+        <p class="cinematic__motto">Investigate <span>◆</span> Learn <span>◆</span> Remember</p>
+      </div>
 
-    <!-- ── Case Archives ────────────────────────────────────────────────── -->
-    <section id="case-archives" class="site-section" aria-labelledby="archives-heading">
-      <div class="container">
-        <h2 id="archives-heading" class="section-heading">Case Archives</h2>
+      <div class="grave-emergence" id="grave-emergence" aria-hidden="true">
+        <div class="grave-emergence__soil"></div>
+        <svg class="grave-emergence__hand grave-emergence__hand--one" viewBox="0 0 160 190" role="presentation">
+          <path d="M70 188c-9-25-15-43-17-60l-8-39c-2-11 12-17 18-7l13 27-8-68c-1-13 16-15 19-2l12 55-1-66c0-14 17-14 19 0l4 66 8-48c2-12 18-8 17 4l-9 78c-3 24-16 44-31 60z" fill="#c4a58c" stroke="#352536" stroke-width="6" stroke-linejoin="round"/>
+        </svg>
+        <svg class="grave-emergence__hand grave-emergence__hand--two" viewBox="0 0 160 190" role="presentation">
+          <path d="M70 188c-9-25-15-43-17-60l-8-39c-2-11 12-17 18-7l13 27-8-68c-1-13 16-15 19-2l12 55-1-66c0-14 17-14 19 0l4 66 8-48c2-12 18-8 17 4l-9 78c-3 24-16 44-31 60z" fill="#c4a58c" stroke="#352536" stroke-width="6" stroke-linejoin="round"/>
+        </svg>
+      </div>
 
-        <!-- aria-live="polite": screen readers announce content changes
-             (loading, loaded, error) without interrupting the user.
-             Static fallback text is shown when JavaScript is unavailable. -->
-        <div id="case-list-region" aria-live="polite" aria-label="Cases">
-          <p>Case content will be listed here.</p>
+      <div class="coroner-emergence" id="coroner-emergence" aria-hidden="true">
+        <div class="grave-rim"></div>
+        <div class="grave-dirt grave-dirt--one"></div>
+        <div class="grave-dirt grave-dirt--two"></div>
+        <img class="coroner-emergence__figure" src="assets/coroner-emerging.png"
+          alt="The Coroner climbing out of a grave, wearing an aged ivory coat and burgundy waistcoat, holding a glowing brass lantern.">
+        <div class="coroner-dialogue" id="coroner-dialogue" aria-live="polite">
+          <p class="eyebrow">The Coroner <span>· Keeper of the Records</span></p>
+          <p>“Ahh… another curious soul. Excellent. The departed left clues behind. Come, let us examine the evidence — carefully, and without confusing rumor for fact.”</p>
+          <button class="coroner-continue" id="coroner-continue" type="button">Enter the grounds <span aria-hidden="true">→</span></button>
         </div>
       </div>
-    </section>
-
-    <!-- ── The Journal ──────────────────────────────────────────────────── -->
-    <section id="journal" class="site-section" aria-labelledby="journal-heading">
-      <div class="container">
-        <h2 id="journal-heading" class="section-heading">The Journal</h2>
-        <p>Your investigation progress will appear here.</p>
+      <div class="cinematic__story" id="cinematic-story" aria-live="polite">
+        <p class="story-step" id="story-step">01 / THE ARRIVAL</p>
+        <p class="story-line" id="story-line">A quiet road ends here. Beyond these gates, forgotten fortunes have found their final resting place.</p>
+      </div>
+      <div class="cinematic__actions">
+        <button class="button button--primary" id="begin-cinematic" type="button">Begin the Visit <span aria-hidden="true">→</span></button>
+        <button class="cinematic__skip" id="skip-cinematic" type="button" hidden>Skip cinematic</button>
+      </div>
+      <div class="cinematic__progress" aria-label="Opening sequence progress">
+        <span class="is-current" data-progress="0">Arrival</span><span data-progress="1">The Gates</span><span data-progress="2">Something Moves</span><span data-progress="3">The Coroner</span><span data-progress="4">Welcome</span>
       </div>
     </section>
 
-    <!-- ── About the Graveyard ──────────────────────────────────────────── -->
-    <section id="about" class="site-section" aria-labelledby="about-heading">
-      <div class="container">
-        <h2 id="about-heading" class="section-heading">About the Graveyard</h2>
-        <p>Methodology, research standards, claim labels, and educational purpose will be explained here.</p>
+    <section class="app-scene grounds" id="case-archives" data-scene="grounds" aria-labelledby="grounds-title" aria-hidden="true" inert>
+      <div class="grounds__backdrop" aria-hidden="true"></div>
+      <div class="container grounds__content">
+        <p class="eyebrow">Beyond the gates</p>
+        <h2 id="grounds-title">The Cemetery Grounds</h2>
+        <p class="grounds__intro">Eight fallen projects. Eight lessons. Choose a grave to examine the record, follow the evidence, and separate what is known from what is alleged.</p>
+        <div id="case-list-region" class="graveyard-directory" aria-live="polite" aria-label="Case graves"><p>Consulting the records…</p></div>
+        <button class="scene-return" type="button" data-scene-target="cemetery">Return to the Entrance</button>
       </div>
     </section>
 
+    <section class="app-scene info-scene" id="journal" data-scene="journal" aria-labelledby="journal-heading" aria-hidden="true" inert>
+      <div class="info-scene__backdrop" aria-hidden="true"></div>
+      <div class="info-scene__panel">
+        <p class="eyebrow">Your field notes</p>
+        <h2 id="journal-heading">The Journal</h2>
+        <p>Investigation notes and progress tracking will be introduced in a later phase. For now, the archive is open. Follow the evidence and keep your own field notes.</p>
+        <button class="scene-return" type="button" data-scene-target="grounds">Return to the Cemetery</button>
+      </div>
+    </section>
+
+    <section class="app-scene info-scene" id="about" data-scene="about" aria-labelledby="about-heading" aria-hidden="true" inert>
+      <div class="info-scene__backdrop" aria-hidden="true"></div>
+      <div class="info-scene__panel">
+        <p class="eyebrow">Read the record, not the rumor</p>
+        <h2 id="about-heading">About the Graveyard</h2>
+        <p>Crypto Graveyard is an educational archive about consequential failures in crypto. It distinguishes court findings, official statements, documented facts, reported claims, allegations, and analysis. Inclusion is not a finding of fraud, and the stories are not financial advice.</p>
+        <button class="scene-return" type="button" data-scene-target="cemetery">Return to the Entrance</button>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer scene-footer">
     <p>Crypto Graveyard &mdash; Educational purposes only. Not financial advice.</p>
   </footer>
 
-  <!-- JavaScript entry point will be added in TASK-012. -->
+  <!-- ES module entry point: entrance interaction, navigation, and case directory. -->
+  <script type="module" src="src/js/main.js"></script>
 
 </body>
 </html>

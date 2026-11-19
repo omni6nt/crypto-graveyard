@@ -1,34 +1,398 @@
 {
   "id": "bitconnect",
   "name": "BitConnect",
-  "shortDescription": "[PLACEHOLDER — research required]",
-  "classification": "[PLACEHOLDER — research required]",
-  "researchCutoff": "[PLACEHOLDER — research required]",
+  "shortDescription": "BitConnect's high-return lending program collapsed in 2018 and was later prosecuted as a large Ponzi-style investment fraud.",
+  "classification": "Ponzi-style investment fraud; founder indicted and promoter guilty pleas and judgments",
+  "researchCutoff": "2026-11-19",
   "identity": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "BitConnect operated a cryptocurrency exchange and a Lending Program soliciting cryptocurrency in return for promised returns. Marketing attributed returns to proprietary Trading Bot and Volatility Software. U.S. prosecutors later alleged that the program paid earlier investors with funds from later investors. Lead U.S. promoter Glenn Arcaro pleaded guilty and was sentenced.",
+    "sourceIds": [
+      "bitconnect-src-001",
+      "bitconnect-src-002"
+    ]
   },
   "background": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "BitConnect expanded through a promotional network. The Lending Program was marketed as using automated trading technology to generate substantial profits and guaranteed returns from cryptocurrency-market volatility. Promoters encouraged deposits and referrals. Legal outcomes are person-specific; not every affiliate or customer has been found responsible for wrongdoing.",
+    "sourceIds": [
+      "bitconnect-src-001",
+      "bitconnect-src-002",
+      "bitconnect-src-005"
+    ]
   },
   "incident": {
-    "description": "[PLACEHOLDER — research required]",
-    "claimType": "[PLACEHOLDER]",
-    "sourceIds": []
+    "description": "BitConnect shut down its Lending Program in January 2018 after regulatory pressure and cease-and-desist actions; BCC's price fell sharply. The DOJ's 2022 indictment alleged that the founder and co-conspirators operated the program as a Ponzi scheme and manipulated BCC's price after the lending program closed. Glenn Arcaro pleaded guilty and received a 38-month sentence in September 2022. DOJ announced a victim distribution exceeding $17 million in January 2023. In September 2026, the SEC reported final judgments against three additional promoters. Kumbhani's indictment remains an accusation; DOJ's available update described him as a fugitive.",
+    "claimType": "court_finding",
+    "sourceIds": [
+      "bitconnect-src-001",
+      "bitconnect-src-002",
+      "bitconnect-src-003",
+      "bitconnect-src-004"
+    ]
   },
   "causeAnalysis": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Analysis: the model depended on opaque trading claims, unusually high promised returns and a referral-driven promotional structure. Investors could not independently verify the claimed trading-bot performance or source of returns. Prosecutors alleged that incoming investor funds were recycled to pay earlier participants. The closure removed the central advertised product and was followed by a collapse in BCC's market price. The strongest legal conclusions apply to individuals who pleaded guilty or were subject to judgments; the founder's indictment is not a conviction.",
+    "sourceIds": [
+      "bitconnect-src-001",
+      "bitconnect-src-002",
+      "bitconnect-src-003"
+    ]
   },
-  "timeline": [],
-  "warningSigns": [],
+  "timeline": [
+    {
+      "date": "2016",
+      "event": "BitConnect began operating and promoting its cryptocurrency and exchange ecosystem; the precise launch date requires further primary-source verification.",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "bitconnect-src-001"
+      ]
+    },
+    {
+      "date": "2017-06",
+      "event": "The SEC later alleged that U.S. promoters marketed and sold Lending Program investment contracts during this period.",
+      "claimType": "allegation",
+      "sourceIds": [
+        "bitconnect-src-005"
+      ]
+    },
+    {
+      "date": "2018-01",
+      "event": "BitConnect announced closure of its Lending Program after regulatory warnings; exact chronology should be checked against archived notices before publication.",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "bitconnect-src-001"
+      ]
+    },
+    {
+      "date": "2021-09",
+      "event": "Lead U.S. promoter Glenn Arcaro pleaded guilty in the federal case.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "bitconnect-src-002"
+      ]
+    },
+    {
+      "date": "2022-02-25",
+      "event": "A federal grand jury indicted founder Satish Kumbhani; DOJ described the charges as allegations.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "bitconnect-src-001"
+      ]
+    },
+    {
+      "date": "2022-09-16",
+      "event": "Glenn Arcaro was sentenced to 38 months in prison.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "bitconnect-src-002"
+      ]
+    },
+    {
+      "date": "2023-01",
+      "event": "DOJ announced more than $17 million in forfeited assets for victim compensation.",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "bitconnect-src-003"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "event": "SEC announced final judgments against three promoters in its civil enforcement case.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "bitconnect-src-004"
+      ]
+    }
+  ],
+  "warningSigns": [
+    {
+      "title": "Guaranteed high returns",
+      "description": "The Lending Program was promoted as generating substantial profits and guaranteed returns through proprietary automated trading.",
+      "evidenceAvailable": "The claims were public and could have prompted questions about risk, independently verifiable performance and the source of yield.",
+      "visibility": "pre_incident",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "bitconnect-src-001"
+      ]
+    },
+    {
+      "title": "Opaque proprietary trading claims",
+      "description": "Marketing attributed returns to Trading Bot and Volatility Software without independent performance evidence in the records reviewed.",
+      "evidenceAvailable": "The technology was a public selling point; its trading performance was not independently verifiable from the cited materials.",
+      "visibility": "pre_incident",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "bitconnect-src-001"
+      ]
+    },
+    {
+      "title": "Referral-led promotion",
+      "description": "Promoters marketed the lending product through a network that expanded investor recruitment.",
+      "evidenceAvailable": "Public promotional activity was observable, though individual promoter conduct and legal responsibility varied.",
+      "visibility": "pre_incident",
+      "claimType": "documented_fact",
+      "sourceIds": [
+        "bitconnect-src-002",
+        "bitconnect-src-005"
+      ]
+    },
+    {
+      "title": "Regulatory pressure and program closure",
+      "description": "The Lending Program shut down after regulatory actions and warnings.",
+      "evidenceAvailable": "Regulatory notices and the shutdown were visible crisis signals; by then the product was already under serious stress.",
+      "visibility": "during_incident",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "bitconnect-src-001"
+      ]
+    },
+    {
+      "title": "Token price collapse",
+      "description": "BCC's market value fell sharply after the lending program closed.",
+      "evidenceAvailable": "The price movement was observable; alleged manipulation and fund flows were established later through legal proceedings.",
+      "visibility": "during_incident",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "bitconnect-src-001"
+      ]
+    }
+  ],
   "aftermath": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Glenn Arcaro pleaded guilty and was sentenced to 38 months in September 2022. Founder Satish Kumbhani was indicted in February 2022; DOJ later described him as a fugitive, and this file does not treat the indictment as a conviction. In January 2023, DOJ announced more than $17 million in forfeited assets for victim compensation. In September 2026, the SEC reported final judgments against three promoters in a separate civil enforcement case. These outcomes do not establish identical liability for every promoter or affiliate.",
+    "sourceIds": [
+      "bitconnect-src-001",
+      "bitconnect-src-002",
+      "bitconnect-src-003",
+      "bitconnect-src-004"
+    ]
   },
-  "lessons": [],
-  "sources": [],
+  "lessons": [
+    {
+      "audience": "users",
+      "lesson": "Be skeptical of guaranteed or unusually high returns attributed to proprietary trading systems when independent performance, risk and custody information is unavailable.",
+      "sourceIds": [
+        "bitconnect-src-001",
+        "bitconnect-src-002"
+      ]
+    },
+    {
+      "audience": "users",
+      "lesson": "Understand whether returns depend on external trading profits or continued inflows from new participants; recruitment incentives are not proof of a sustainable investment strategy.",
+      "sourceIds": [
+        "bitconnect-src-001",
+        "bitconnect-src-005"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "Disclose how yield is generated, who controls deposited assets, and what happens if trading revenue fails.",
+      "sourceIds": [
+        "bitconnect-src-001"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "Promotional networks and affiliates need compliance controls, especially where products may be securities.",
+      "sourceIds": [
+        "bitconnect-src-004",
+        "bitconnect-src-005"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bitconnect-src-001",
+      "title": "Founder of Fraudulent Cryptocurrency Charged in $2 Billion BitConnect Ponzi Scheme",
+      "publisher": "U.S. Department of Justice",
+      "author": null,
+      "date": "2022-02-25",
+      "url": "https://www.justice.gov/usao-sdca/pr/founder-fraudulent-cryptocurrency-charged-2-billion-bitconnect-ponzi-scheme",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Founder indictment; Lending Program; alleged Ponzi structure; alleged BCC manipulation"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Indictment allegations; DOJ expressly says charges are accusations."
+    },
+    {
+      "id": "bitconnect-src-002",
+      "title": "U.S. Promoter of Foreign Cryptocurrency Company Sentenced to Prison",
+      "publisher": "U.S. Department of Justice",
+      "author": null,
+      "date": "2022-09-16",
+      "url": "https://www.justice.gov/usao-sdca/pr/us-promoter-foreign-cryptocurrency-company-sentenced-prison-role-fraud-scheme",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Glenn Arcaro guilty plea and 38-month sentence; Lending Program promotion"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "bitconnect-src-003",
+      "title": "Victims of BitConnect Scheme to Receive More than $17 Million",
+      "publisher": "U.S. Department of Justice",
+      "author": null,
+      "date": "2023-01-12",
+      "url": "https://www.justice.gov/usao-sdca/pr/victims-bitconnect-scheme-receive-more-17-million-compensate-losses",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Victim compensation; Kumbhani fugitive status as of release"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "bitconnect-src-004",
+      "title": "SEC Obtains Judgments Against Three BitConnect Promoters",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "author": null,
+      "date": "2026-09-30",
+      "url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26660",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "2026 judgments against promoters; alleged unregistered lending-program securities sales"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "bitconnect-src-005",
+      "title": "SEC v. Brown et al. — litigation release",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "author": null,
+      "date": "2021-05-28",
+      "url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-25060",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "SEC civil allegations against promoters"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Complaint allegations; confirm docket complaint before publication."
+    }
+  ],
   "intuitionReferences": [],
-  "examination": []
+  "examination": [
+    {
+      "id": "bitconnect-exam-001",
+      "prompt": "What was the central product marketed by BitConnect?",
+      "options": [
+        "A government-insured savings account.",
+        "A Lending Program promising returns linked to purported trading software.",
+        "A fully collateralized U.S. dollar stablecoin.",
+        "A regulated exchange-traded fund."
+      ],
+      "defensibleAnswers": [
+        "A Lending Program promising returns linked to purported trading software."
+      ],
+      "explanation": "The DOJ indictment describes the Lending Program and its purported Trading Bot and Volatility Software. Investors should ask how returns are generated and independently verified.",
+      "visibility": "pre_incident",
+      "difficulty": "low",
+      "learningObjective": "Identify the product and promised source of returns.",
+      "sourceIds": [
+        "bitconnect-src-001"
+      ]
+    },
+    {
+      "id": "bitconnect-exam-002",
+      "prompt": "Why were guaranteed high returns a warning sign?",
+      "options": [
+        "They eliminated all market risk.",
+        "They warranted scrutiny of the underlying strategy, custody and evidence for the claimed returns.",
+        "They proved the company held government bonds.",
+        "They guaranteed the token price would rise."
+      ],
+      "defensibleAnswers": [
+        "They warranted scrutiny of the underlying strategy, custody and evidence for the claimed returns."
+      ],
+      "explanation": "A promise of substantial or guaranteed returns should prompt verification of the source of yield and risks. The promise alone is not proof of a Ponzi scheme.",
+      "visibility": "pre_incident",
+      "difficulty": "medium",
+      "learningObjective": "Evaluate unrealistic return claims.",
+      "sourceIds": [
+        "bitconnect-src-001",
+        "bitconnect-src-002"
+      ]
+    },
+    {
+      "id": "bitconnect-exam-003",
+      "prompt": "What did prosecutors allege about how earlier Lending Program investors were paid?",
+      "options": [
+        "From fully audited bank reserves.",
+        "With money from later investors.",
+        "Only from mining rewards.",
+        "From government insurance."
+      ],
+      "defensibleAnswers": [
+        "With money from later investors."
+      ],
+      "explanation": "The founder's indictment alleged a Ponzi structure in which later investor funds paid earlier participants. Attribute this to the indictment unless a plea or judgment establishes a specific defendant's conduct.",
+      "visibility": "hindsight",
+      "difficulty": "medium",
+      "learningObjective": "Understand the alleged Ponzi cash-flow structure.",
+      "sourceIds": [
+        "bitconnect-src-001"
+      ]
+    },
+    {
+      "id": "bitconnect-exam-004",
+      "prompt": "What happened after BitConnect shut down its Lending Program?",
+      "options": [
+        "The program continued unchanged.",
+        "BCC's price fell sharply and prosecutors later alleged manipulation to create apparent demand.",
+        "All investors were immediately repaid.",
+        "The company became a regulated bank."
+      ],
+      "defensibleAnswers": [
+        "BCC's price fell sharply and prosecutors later alleged manipulation to create apparent demand."
+      ],
+      "explanation": "Separate the observable price collapse from later legal allegations about why it happened.",
+      "visibility": "during_incident",
+      "difficulty": "high",
+      "learningObjective": "Separate market observations from later allegations.",
+      "sourceIds": [
+        "bitconnect-src-001"
+      ]
+    },
+    {
+      "id": "bitconnect-exam-005",
+      "prompt": "Which statement accurately describes Glenn Arcaro's legal outcome?",
+      "options": [
+        "He was never charged.",
+        "He pleaded guilty and was sentenced to 38 months in September 2022.",
+        "He was the founder and was acquitted.",
+        "He received a 20-year sentence in 2026."
+      ],
+      "defensibleAnswers": [
+        "He pleaded guilty and was sentenced to 38 months in September 2022."
+      ],
+      "explanation": "The DOJ records Arcaro's guilty plea and sentence. This outcome is specific to a lead U.S. promoter.",
+      "visibility": "hindsight",
+      "difficulty": "low",
+      "learningObjective": "Distinguish person-specific legal outcomes.",
+      "sourceIds": [
+        "bitconnect-src-002"
+      ]
+    },
+    {
+      "id": "bitconnect-exam-006",
+      "prompt": "How should Satish Kumbhani's status be described?",
+      "options": [
+        "Convicted and sentenced in the United States.",
+        "Indicted in 2022; DOJ later described him as a fugitive, so the indictment is not a conviction.",
+        "Acquitted by a jury.",
+        "A court-appointed liquidator."
+      ],
+      "defensibleAnswers": [
+        "Indicted in 2022; DOJ later described him as a fugitive, so the indictment is not a conviction."
+      ],
+      "explanation": "The DOJ says charges are accusations. Preserve the distinction between allegations against Kumbhani and outcomes involving other promoters.",
+      "visibility": "hindsight",
+      "difficulty": "high",
+      "learningObjective": "Maintain legal-status precision.",
+      "sourceIds": [
+        "bitconnect-src-001",
+        "bitconnect-src-003"
+      ]
+    }
+  ]
 }

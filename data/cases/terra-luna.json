@@ -1,34 +1,459 @@
 {
   "id": "terra-luna",
   "name": "Terra / LUNA",
-  "shortDescription": "[PLACEHOLDER — research required]",
-  "classification": "[PLACEHOLDER — research required]",
-  "researchCutoff": "[PLACEHOLDER — research required]",
+  "shortDescription": "TerraUSD lost its dollar peg in May 2022, triggering a collapse across the Terra token ecosystem and major investor losses.",
+  "classification": "Algorithmic stablecoin and crypto-ecosystem collapse; civil fraud liability and criminal conviction established",
+  "researchCutoff": "2026-11-19",
   "identity": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Terraform Labs developed the Terra blockchain ecosystem, including TerraUSD (UST), an algorithmic stablecoin designed to maintain a US-dollar peg through an exchange relationship with the LUNA token. Terraform also promoted LUNA and other ecosystem tokens. Anchor Protocol was a major UST use case and was marketed with yields advertised as high as 20%. The SEC's amended complaint describes these products and the representations made about their operation; the SEC later obtained a jury verdict holding Terraform and Do Kwon liable for securities fraud.",
+    "sourceIds": [
+      "terra-luna-src-001",
+      "terra-luna-src-002"
+    ]
   },
   "background": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "UST's peg mechanism depended on market participants being able to exchange UST and LUNA under the protocol's rules. That design linked confidence in the stablecoin to demand and market value for LUNA. Anchor's advertised high yield attracted substantial UST deposits. The SEC complaint also alleged that Terraform and Kwon misrepresented both UST stability and the use of Terra blockchain technology by a popular payment application. These marketing allegations should be read alongside the later jury verdict, which found the defendants liable for fraud.",
+    "sourceIds": [
+      "terra-luna-src-001",
+      "terra-luna-src-002"
+    ]
   },
   "incident": {
-    "description": "[PLACEHOLDER — research required]",
-    "claimType": "[PLACEHOLDER]",
-    "sourceIds": []
+    "description": "UST de-pegged from the dollar in May 2022. The SEC's trial summary states that UST and Terraform's other tokens then fell close to zero, wiping out more than $40 billion in combined market value nearly overnight. The SEC's amended complaint describes the algorithm failing to maintain the peg after large UST sales beginning around May 7, 2022. LFG's own audit reports substantial UST purchases and transfers of bitcoin to trading firms during May 8–12 in an attempt to defend the peg. On April 5, 2024, a jury found Terraform and Do Kwon liable for securities fraud; on June 12, 2024, a final consent judgment followed. In December 2025, Do Kwon was sentenced to 15 years in the separate U.S. criminal case.",
+    "claimType": "court_finding",
+    "sourceIds": [
+      "terra-luna-src-001",
+      "terra-luna-src-002",
+      "terra-luna-src-003",
+      "terra-luna-src-006"
+    ]
   },
   "causeAnalysis": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Analysis: the collapse exposed a reflexive design dependency. As confidence in UST weakened, the redemption mechanism placed pressure on LUNA; falling LUNA value in turn undermined confidence in the mechanism backing UST. The SEC's complaint and government financial-stability report describe the run dynamics and vulnerabilities of algorithmic stablecoins. High advertised Anchor yields amplified the ecosystem's dependence on continued demand and confidence. LFG's own report documents extraordinary attempts to defend the peg, but should not be treated as an independent audit of the complete defense operation. The legal fraud findings concern specific misrepresentations and should not be simplified into a court finding that every aspect of the algorithm was fraudulent.",
+    "sourceIds": [
+      "terra-luna-src-001",
+      "terra-luna-src-002",
+      "terra-luna-src-005",
+      "terra-luna-src-006"
+    ]
   },
-  "timeline": [],
-  "warningSigns": [],
+  "timeline": [
+    {
+      "date": "2018-04",
+      "event": "Terraform Labs was founded and began developing the Terra ecosystem, as described in the SEC complaint.",
+      "claimType": "allegation",
+      "sourceIds": [
+        "terra-luna-src-001"
+      ]
+    },
+    {
+      "date": "2020-09",
+      "event": "TerraUSD (UST) launched as an algorithmic stablecoin linked to LUNA; exact launch details should be cross-checked against protocol documentation before publication.",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "terra-luna-src-001"
+      ]
+    },
+    {
+      "date": "2021-05",
+      "event": "UST experienced an earlier depeg; the SEC complaint alleged that a third-party trading firm intervened to help restore the peg, while Terraform and Kwon did not disclose that intervention to investors.",
+      "claimType": "allegation",
+      "sourceIds": [
+        "terra-luna-src-001"
+      ]
+    },
+    {
+      "date": "2022-05-07",
+      "event": "UST de-pegged again amid large sales; the SEC complaint describes this as the start of the final collapse sequence.",
+      "claimType": "allegation",
+      "sourceIds": [
+        "terra-luna-src-001"
+      ]
+    },
+    {
+      "date": "2022-05",
+      "event": "LFG and Terraform reported using stablecoins, bitcoin transfers and large UST purchases in an attempt to defend the peg.",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "terra-luna-src-006"
+      ]
+    },
+    {
+      "date": "2022-05",
+      "event": "UST and Terraform ecosystem tokens fell close to zero; the SEC said more than $40 billion in combined market value was wiped out.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "terra-luna-src-002"
+      ]
+    },
+    {
+      "date": "2023-02-16",
+      "event": "The SEC filed its civil fraud action against Terraform Labs and Do Kwon.",
+      "claimType": "documented_fact",
+      "sourceIds": [
+        "terra-luna-src-001"
+      ]
+    },
+    {
+      "date": "2024-04-05",
+      "event": "A jury found Terraform Labs and Do Kwon liable for securities fraud after the SEC civil trial.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "terra-luna-src-002"
+      ]
+    },
+    {
+      "date": "2024-06-12",
+      "event": "The court entered a final consent judgment; Terraform's total ordered monetary relief was described by the SEC as more than $4.5 billion.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "terra-luna-src-002",
+        "terra-luna-src-004"
+      ]
+    },
+    {
+      "date": "2025-12-11",
+      "event": "Do Kwon was sentenced to 15 years' imprisonment in the U.S. criminal case and ordered to forfeit more than $19 million in proceeds.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "terra-luna-src-003"
+      ]
+    }
+  ],
+  "warningSigns": [
+    {
+      "title": "High advertised stablecoin yield",
+      "description": "Anchor was promoted with yields advertised as high as 20% on UST deposits.",
+      "evidenceAvailable": "The advertised yield was public. It was a signal to investigate the source and sustainability of returns, not proof by itself of fraud.",
+      "visibility": "pre_incident",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "terra-luna-src-001"
+      ]
+    },
+    {
+      "title": "Peg depended on a volatile ecosystem token",
+      "description": "UST's mechanism linked its redemption path to LUNA, creating dependence on confidence and market liquidity for the related token.",
+      "evidenceAvailable": "The mechanism was publicly described; the degree of stress under a mass redemption scenario required technical and economic analysis.",
+      "visibility": "pre_incident",
+      "claimType": "documented_fact",
+      "sourceIds": [
+        "terra-luna-src-001",
+        "terra-luna-src-005"
+      ]
+    },
+    {
+      "title": "Earlier depeg and intervention",
+      "description": "The SEC alleged that a third party helped restore UST's peg during a May 2021 depeg and that this intervention was not disclosed to investors.",
+      "evidenceAvailable": "The depeg was observable; the alleged undisclosed intervention became clear through later litigation.",
+      "visibility": "hindsight",
+      "claimType": "allegation",
+      "sourceIds": [
+        "terra-luna-src-001"
+      ]
+    },
+    {
+      "title": "Large UST sales and falling peg",
+      "description": "The SEC complaint describes large sales beginning around May 7, 2022 as the peg broke.",
+      "evidenceAvailable": "UST's market price and liquidity stress were observable in real time; the full cause analysis was not.",
+      "visibility": "during_incident",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "terra-luna-src-001"
+      ]
+    },
+    {
+      "title": "Emergency reserve deployment",
+      "description": "LFG reported major transfers and purchases to defend the peg during May 8–12.",
+      "evidenceAvailable": "The public could observe emergency announcements and market conditions, but not independently verify every reserve movement at the time.",
+      "visibility": "during_incident",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "terra-luna-src-006"
+      ]
+    }
+  ],
   "aftermath": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Terraform entered Chapter 11 in January 2024 and a liquidating plan was approved in September 2024. In the SEC civil case, a jury found Terraform and Do Kwon liable for securities fraud in April 2024; a final consent judgment followed in June 2024. The SEC states that the judgment includes $4.47 billion in disgorgement, prejudgment interest and civil penalties, with payments credited through the bankruptcy process and investor/creditor priority. Do Kwon was sentenced to 15 years in the U.S. criminal case on December 11, 2025. The liquidation and claims process remained active according to SEC information last reviewed September 18, 2025; this research does not assert that all harmed investors have been paid.",
+    "sourceIds": [
+      "terra-luna-src-002",
+      "terra-luna-src-003",
+      "terra-luna-src-004"
+    ]
   },
-  "lessons": [],
-  "sources": [],
+  "lessons": [
+    {
+      "audience": "users",
+      "lesson": "A stablecoin's label does not guarantee cash reserves or a robust redemption path. Understand what assets or mechanisms support the peg and how they behave under correlated selling.",
+      "sourceIds": [
+        "terra-luna-src-001",
+        "terra-luna-src-005"
+      ]
+    },
+    {
+      "audience": "users",
+      "lesson": "Treat unusually high advertised yields as a prompt to examine counterparty, liquidity and sustainability risks; yield is not a risk-free feature of a stablecoin.",
+      "sourceIds": [
+        "terra-luna-src-001"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "Stress-test algorithmic mechanisms against mass redemptions, collapsing collateral or endogenous token demand, and publish the limits of emergency defenses.",
+      "sourceIds": [
+        "terra-luna-src-001",
+        "terra-luna-src-005",
+        "terra-luna-src-006"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "Disclose material interventions, reserve movements and changes to a peg mechanism accurately and promptly.",
+      "sourceIds": [
+        "terra-luna-src-001",
+        "terra-luna-src-006"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "terra-luna-src-001",
+      "title": "SEC v. Terraform Labs PTE Ltd. and Do Hyeong Kwon — amended complaint",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "author": null,
+      "date": "2023-04-03",
+      "url": "https://www.sec.gov/files/terraform-labs-pte-ltd-amended-complaint.pdf",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "UST/LUNA mechanism and marketing claims as alleged by SEC",
+        "Anchor advertised yields up to 20%",
+        "May 2021 depeg and alleged third-party intervention",
+        "May 2022 UST depeg and collapse sequence"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "SEC complaint: allegations in the complaint must be distinguished from later jury findings."
+    },
+    {
+      "id": "terra-luna-src-002",
+      "title": "Terraform and Kwon to Pay $4.5 Billion Following Fraud Verdict",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "author": null,
+      "date": "2024-06-13",
+      "url": "https://www.sec.gov/newsroom/press-releases/2024-73",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "April 5 2024 jury liability verdict",
+        "May 2022 depeg and near-total price collapse",
+        "More than $40bn market value wiped out as described by SEC",
+        "June 2024 settlement and wind-down"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "terra-luna-src-003",
+      "title": "United States v. Kwon — sentencing update",
+      "publisher": "U.S. Attorney's Office, Southern District of New York",
+      "author": null,
+      "date": "2025-12-12",
+      "url": "https://www.justice.gov/usao-sdny/united-states-v-kwon-23-cr-151-pae-terraform-labs-fraud",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Do Kwon sentenced to 15 years on December 11 2025",
+        "Forfeiture exceeding $19m",
+        "Criminal case status"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "terra-luna-src-004",
+      "title": "SEC v. Terraform Labs — investor distribution and bankruptcy information",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "author": null,
+      "date": "2025-09-18",
+      "url": "https://www.sec.gov/enforcement-litigation/distributions-harmed-investors/sec-v-terraform-labs-pte-ltd-do-hyeong-kwon-no-23-cv-1346-jsr-sdny",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "June 12 2024 final consent judgment",
+        "Terraform Chapter 11 liquidation plan approved September 20 2024",
+        "Liquidating trust and claims process",
+        "Court-ordered amounts and investor/creditor priority"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "terra-luna-src-005",
+      "title": "Report on Digital Asset Financial Stability Risks and Regulation 2022",
+      "publisher": "U.S. Financial Stability Oversight Council",
+      "author": null,
+      "date": "2022-10-03",
+      "url": "https://home.treasury.gov/system/files/FSOC-Digital-Assets-Report-2022.pdf",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Algorithmic stablecoin fragility and run risk",
+        "UST depeg contagion and market stress context"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "U.S. government interagency report; system-level analysis, not a forensic audit of every Terra transaction."
+    },
+    {
+      "id": "terra-luna-src-006",
+      "title": "Luna Foundation Guard Audit — UST peg defense transactions",
+      "publisher": "Luna Foundation Guard",
+      "author": null,
+      "date": "2022-11-14",
+      "url": "https://lfg.org/audit/LFG-Audit-2022-11-14.pdf",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "LFG and Terraform reported asset deployments between May 8 and May 12 2022 to defend UST peg",
+        "Reported transfers and purchases through trading firms"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Commissioned/issued by the foundation itself; useful as an official self-report, not an independent audit of all underlying counterparties."
+    },
+    {
+      "id": "terra-luna-src-008",
+      "title": "Plan Administrator's Fourth Status Update (Docket No. 1392)",
+      "publisher": "Terraform Labs Pte. Ltd. Wind Down Trust; U.S. Bankruptcy Court for the District of Delaware",
+      "author": "Plan Administrator Todd R. Snyder",
+      "date": "2026-11-13",
+      "url": "https://restructuring.ra.kroll.com/Terraform/Home-Index",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Crypto Loss Claims reconciliation progress as of November 2026",
+        "14,791 initial determinations issued out of 15,251 claims eligible for review",
+        "13,185 accepted or deemed accepted initial determinations; 1,466 disputed; 140 pending response; 314 remaining initial determinations",
+        "Plan Administrator had not yet determined the Distribution Record Date",
+        "Beltran escrow recovery and ongoing litigation matters described in the status update"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Official bankruptcy status update, Case No. 24-10070 (BLS), D.I. 1392, filed November 13, 2026. Exhibit A pages 11–12 provides the claims-process flow and figures. Paragraph 8 says the Distribution Record Date had not yet been determined. Claims determinations are not proof that Crypto Loss Claim distributions have commenced."
+    }
+  ],
   "intuitionReferences": [],
-  "examination": []
+  "examination": [
+    {
+      "id": "terra-luna-exam-001",
+      "prompt": "What primarily supported UST's intended dollar peg?",
+      "options": [
+        "A direct legal guarantee that every UST was redeemable for one U.S. dollar in a bank account.",
+        "An algorithmic exchange relationship with LUNA.",
+        "A fixed supply of U.S. Treasury bills held in custody.",
+        "A government deposit-insurance scheme."
+      ],
+      "defensibleAnswers": [
+        "An algorithmic exchange relationship with LUNA."
+      ],
+      "explanation": "UST's mechanism linked its peg to the ability to exchange UST and LUNA. This created a dependency on market confidence and liquidity in the related token.",
+      "visibility": "pre_incident",
+      "difficulty": "low",
+      "learningObjective": "Identify the mechanism underlying an algorithmic stablecoin.",
+      "sourceIds": [
+        "terra-luna-src-001"
+      ]
+    },
+    {
+      "id": "terra-luna-exam-002",
+      "prompt": "Why did Anchor's advertised yield matter to the risk profile?",
+      "options": [
+        "It proved UST was fully reserved.",
+        "It created an incentive to hold UST and raised questions about the sustainability and source of high returns.",
+        "It guaranteed deposit insurance.",
+        "It removed the need for market liquidity."
+      ],
+      "defensibleAnswers": [
+        "It created an incentive to hold UST and raised questions about the sustainability and source of high returns."
+      ],
+      "explanation": "The SEC described Anchor's advertised yield of up to 20%. High yield is not proof of misconduct, but it warrants scrutiny of the economic source and durability of returns.",
+      "visibility": "pre_incident",
+      "difficulty": "medium",
+      "learningObjective": "Evaluate yield incentives and sustainability.",
+      "sourceIds": [
+        "terra-luna-src-001"
+      ]
+    },
+    {
+      "id": "terra-luna-exam-003",
+      "prompt": "What did the SEC allege about the May 2021 UST depeg?",
+      "options": [
+        "UST never lost its peg before May 2022.",
+        "A third party helped restore the peg, and that intervention was allegedly not disclosed to investors.",
+        "The Federal Reserve guaranteed UST.",
+        "LUNA was not connected to UST."
+      ],
+      "defensibleAnswers": [
+        "A third party helped restore the peg, and that intervention was allegedly not disclosed to investors."
+      ],
+      "explanation": "This is an allegation in the SEC complaint, not a standalone technical finding. The important lesson is to distinguish a public peg recovery from what actually caused it.",
+      "visibility": "hindsight",
+      "difficulty": "high",
+      "learningObjective": "Distinguish public outcomes from undisclosed interventions.",
+      "sourceIds": [
+        "terra-luna-src-001"
+      ]
+    },
+    {
+      "id": "terra-luna-exam-004",
+      "prompt": "What happened during the May 2022 collapse?",
+      "options": [
+        "UST remained at one dollar while LUNA rose.",
+        "UST de-pegged and UST/LUNA prices collapsed, with more than $40 billion in combined market value wiped out according to the SEC.",
+        "Only an unrelated exchange token fell.",
+        "The ecosystem was unaffected."
+      ],
+      "defensibleAnswers": [
+        "UST de-pegged and UST/LUNA prices collapsed, with more than $40 billion in combined market value wiped out according to the SEC."
+      ],
+      "explanation": "The SEC's post-trial summary reports the peg break, collapse in token prices and market-value loss. The amount is an estimate of market value, not a cash-loss accounting for every investor.",
+      "visibility": "during_incident",
+      "difficulty": "medium",
+      "learningObjective": "Understand the scale and nature of the collapse.",
+      "sourceIds": [
+        "terra-luna-src-002"
+      ]
+    },
+    {
+      "id": "terra-luna-exam-005",
+      "prompt": "What is the strongest lesson from the LFG reserve-defense report?",
+      "options": [
+        "A foundation's own report is the same as an independent forensic audit.",
+        "Emergency reserve deployments can be documented, but self-reported figures should be attributed and their verification limits stated.",
+        "A reserve intervention guarantees the peg will recover.",
+        "Reserve sales cannot affect other markets."
+      ],
+      "defensibleAnswers": [
+        "Emergency reserve deployments can be documented, but self-reported figures should be attributed and their verification limits stated."
+      ],
+      "explanation": "LFG's report records transactions it said were used to defend UST. It is useful primary evidence of the foundation's account, but it is not an independent audit of every counterparty or outcome.",
+      "visibility": "hindsight",
+      "difficulty": "high",
+      "learningObjective": "Assess the evidentiary limits of self-reported records.",
+      "sourceIds": [
+        "terra-luna-src-006"
+      ]
+    },
+    {
+      "id": "terra-luna-exam-006",
+      "prompt": "Which legal outcomes are correctly described as of the research cutoff?",
+      "options": [
+        "Do Kwon was acquitted and Terraform continued normally.",
+        "A civil jury found Terraform and Kwon liable for securities fraud, and Kwon received a 15-year U.S. prison sentence in December 2025.",
+        "The SEC only filed an untested complaint.",
+        "The criminal sentence was imposed on every Terra investor."
+      ],
+      "defensibleAnswers": [
+        "A civil jury found Terraform and Kwon liable for securities fraud, and Kwon received a 15-year U.S. prison sentence in December 2025."
+      ],
+      "explanation": "The SEC reports the April 2024 civil jury verdict and the DOJ reports the December 2025 criminal sentence. These are separate proceedings and should not be conflated.",
+      "visibility": "hindsight",
+      "difficulty": "medium",
+      "learningObjective": "Separate civil liability from criminal sentencing.",
+      "sourceIds": [
+        "terra-luna-src-002",
+        "terra-luna-src-003"
+      ]
+    }
+  ]
 }

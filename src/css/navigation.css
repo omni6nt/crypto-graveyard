@@ -1,46 +1,20 @@
 /*
  * navigation.css
- * Skip-to-content link, main navigation bar, and mobile toggle.
- *
- * Progressive enhancement approach:
- *
- *   Without JavaScript:
- *     - .nav-toggle is hidden (display: none at all widths).
- *     - .nav-list is always visible.
- *     - Navigation links are fully usable without a toggle button.
- *
- *   With JavaScript (nav.js adds "js-nav-ready" to <nav>):
- *     - .nav-toggle becomes visible on mobile (below 48em).
- *     - .nav-list defaults to hidden on mobile.
- *     - Opening the toggle sets aria-expanded="true", which CSS uses
- *       to show the list.
- *     - On desktop (48em+), .nav-toggle remains hidden regardless of
- *       JS state; the nav list is always shown as a horizontal row.
- *
- * All transitions are inside @media (prefers-reduced-motion: no-preference).
- */
-
-/* ── Skip-to-content link ───────────────────────────────────────────────── */
-/*
- * Visually hidden by default; becomes visible when focused by keyboard.
- * Must be the first focusable element on the page.
- * Jumps focus to <main id="main-content">.
+ * Accessible responsive navigation and skip link.
+ * Mobile menu is full-width within the header and overlays page content.
  */
 
 .skip-to-content {
   position: absolute;
   top: var(--space-2);
   left: var(--space-2);
-  z-index: 100;
-
-  /* Visually hidden when not focused */
+  z-index: 200;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   overflow: hidden;
   white-space: nowrap;
   width: 1px;
   height: 1px;
-
   padding: var(--space-2) var(--space-4);
   background-color: var(--color-deep-charcoal);
   color: var(--color-bone-ivory);
@@ -53,7 +27,6 @@
 }
 
 .skip-to-content:focus-visible {
-  /* Restore visible dimensions when focused */
   clip: auto;
   clip-path: none;
   overflow: visible;
@@ -61,47 +34,14 @@
   height: auto;
 }
 
-/* ── Main navigation ────────────────────────────────────────────────────── */
-
 .site-nav {
   position: relative;
 }
-
-/* ── Toggle button ──────────────────────────────────────────────────────── */
-/*
- * Hidden by default at all widths.
- * Shown only on mobile when JavaScript has enhanced the nav (js-nav-ready).
- * Never shown on desktop (overridden below at 48em+).
- */
 
 .nav-toggle {
   display: none;
 }
 
-/* Show the toggle on mobile when JS enhancement is active */
-@media (max-width: 47.999em) {
-  nav.js-nav-ready .nav-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;   /* meets 44×44 CSS-pixel touch target requirement */
-    height: 44px;
-    padding: 0;
-    background: none;
-    border: 1px solid var(--color-cemetery-purple);
-    border-radius: 2px;
-    color: var(--color-bone-ivory);
-    cursor: pointer;
-    font-size: var(--text-lg);
-    line-height: 1;
-  }
-
-  nav.js-nav-ready .nav-toggle:hover {
-    background-color: var(--color-cemetery-purple);
-  }
-}
-
-/* Hamburger icon — three lines, aria-hidden on the wrapper element */
 .nav-toggle-icon {
   display: block;
   width: 20px;
@@ -122,13 +62,7 @@
 }
 
 .nav-toggle-icon::before { top: -6px; }
-.nav-toggle-icon::after  { top:  6px; }
-
-/* ── Nav list — base state ──────────────────────────────────────────────── */
-/*
- * Default: always visible as a flex column.
- * This is the no-JS fallback; the list is never hidden without JS.
- */
+.nav-toggle-icon::after { top: 6px; }
 
 .nav-list {
   display: flex;
@@ -136,18 +70,19 @@
   gap: 0;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .nav-list a {
   display: flex;
   align-items: center;
-  min-height: 44px;   /* 44px touch target */
+  min-height: 44px;
   padding: var(--space-3) var(--space-4);
   font-family: var(--font-ui);
   font-size: var(--text-sm);
   color: var(--color-bone-ivory);
   text-decoration: none;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .nav-list a:hover {
@@ -160,24 +95,62 @@
   border-left: 3px solid var(--color-antique-gold);
 }
 
-/* ── Mobile nav (below 48em) ────────────────────────────────────────────── */
-
+/* Mobile: give nav its own full row so the dropdown has real width.
+   The header is raised above main content so the menu cannot be painted
+   underneath the following section. */
 @media (max-width: 47.999em) {
+  .site-header {
+    position: relative;
+    z-index: 100;
+  }
+
+  nav.site-nav {
+    flex: 1 0 100%;
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav.js-nav-ready .nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    padding: 0;
+    background: none;
+    border: 1px solid var(--color-cemetery-purple);
+    border-radius: 2px;
+    color: var(--color-bone-ivory);
+    cursor: pointer;
+    font-size: var(--text-lg);
+    line-height: 1;
+  }
+
+  nav.js-nav-ready .nav-toggle:hover {
+    background-color: var(--color-cemetery-purple);
+  }
+
   .nav-list {
     position: absolute;
-    top: 100%;
-    right: 0;
+    top: calc(100% - var(--space-2));
+    left: 0;
+    right: auto;
+    width: min(100%, 24rem);
+    max-width: calc(100vw - 2rem);
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
     background-color: var(--color-deep-charcoal);
     border: 1px solid var(--color-cemetery-purple);
     border-top: none;
-    z-index: 50;
-    min-width: 200px;
+    z-index: 150;
+    box-shadow: 0 0.75rem 1.5rem rgb(0 0 0 / 35%);
   }
 
-  /*
-   * With JS active: nav list defaults to hidden on mobile.
-   * aria-expanded="true" on the toggle reveals it.
-   */
   nav.js-nav-ready .nav-list {
     display: none;
   }
@@ -187,11 +160,6 @@
     flex-direction: column;
   }
 
-  /*
-   * Animate menu open only when reduced motion is not requested.
-   * Purpose: smooth appearance for users without motion sensitivity;
-   * the menu appears instantly for users who prefer reduced motion.
-   */
   @media (prefers-reduced-motion: no-preference) {
     nav.js-nav-ready .nav-toggle[aria-expanded="true"] + .nav-list {
       animation: nav-open 150ms ease forwards;
@@ -199,35 +167,36 @@
 
     @keyframes nav-open {
       from { opacity: 0; transform: translateY(-4px); }
-      to   { opacity: 1; transform: translateY(0); }
+      to { opacity: 1; transform: translateY(0); }
     }
   }
 }
 
-/* ── Desktop nav (48em and above) ───────────────────────────────────────── */
-
 @media (min-width: 48em) {
-  /* Toggle is always hidden on desktop — regardless of JS state */
   .nav-toggle,
   nav.js-nav-ready .nav-toggle {
     display: none;
   }
 
-  /* Nav list always visible as a horizontal row on desktop */
   .nav-list,
   nav.js-nav-ready .nav-list {
     display: flex;
     flex-direction: row;
     position: static;
+    width: auto;
+    max-width: none;
+    max-height: none;
+    overflow: visible;
     background: none;
     border: none;
+    box-shadow: none;
     gap: var(--space-2);
-    min-width: unset;
   }
 
   .nav-list a {
     padding: var(--space-2) var(--space-3);
     border-radius: 2px;
+    white-space: nowrap;
   }
 
   .nav-list a[aria-current="page"] {

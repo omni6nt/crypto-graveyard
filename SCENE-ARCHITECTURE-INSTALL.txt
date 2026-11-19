@@ -1,0 +1,44 @@
+CRYPTO GRAVEYARD — SCENE ARCHITECTURE REBUILD
+
+This batch changes the major destinations from vertically stacked page sections into discrete full-viewport scenes.
+
+REPLACES
+- index.html
+- src/js/main.js
+- src/css/components.css
+
+PRESERVES
+- Existing navigation module and data loader
+- Existing tokens/reset/base/layout/navigation CSS
+- All research, case JSON, schema and assets
+- Existing Coroner portrait and cemetery environment artwork
+
+INSTALL
+1. Stop the local server (Ctrl+C).
+2. Back up the three files being replaced.
+3. Extract this ZIP into C:\dev\crypto-graveyard.
+4. Start:
+   cd C:\dev\crypto-graveyard
+   npx http-server . -p 8000
+5. Hard-refresh the browser (Ctrl+Shift+R).
+
+SCENES
+- The Cemetery: cinematic entrance and Coroner introduction.
+- Case Archives: cemetery grounds and eight case markers.
+- The Journal: separate full-screen informational scene.
+- About the Graveyard: separate full-screen informational scene.
+
+CONTROLS
+- Header navigation switches scenes without vertical page scrolling.
+- "Enter the Cemetery" switches from the opening scene to the grounds.
+- Scene return buttons navigate to the named scene.
+- Escape returns to the entrance.
+- Browser hash is updated to the current scene.
+
+IMPORTANT LIMITATIONS
+- This batch changes scene architecture, not the underlying art assets.
+- The entrance's gate/emergence animations remain prototype-level.
+- Individual case grave links remain intentionally inactive until case investigation scenes are built.
+- The cemetery scene allows internal scrolling on small screens if the grave directory exceeds the available viewport; the overall page does not scroll.
+- The existing nav.js must remain in place. This package intentionally does not replace it.
+- Test mobile navigation and all scene transitions before committing.

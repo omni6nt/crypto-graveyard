@@ -1,0 +1,55 @@
+CRYPTO GRAVEYARD — PHASE 1 PRODUCTION ENTRANCE
+================================================
+
+This batch replaces:
+- index.html
+- src/js/main.js
+- src/css/components.css
+- docs/kiro-log.md
+
+Adds:
+- assets/cemetery-environment.webp
+
+It preserves:
+- the existing vanilla HTML/CSS/JS architecture
+- the existing data loader and navigation module
+- all eight canonical case JSON files and the case index
+- all research documents and schema
+
+INSTALL
+-------
+1. Stop the local server with Ctrl+C.
+2. Back up the four replaced files.
+3. Extract this ZIP into C:\dev\crypto-graveyard, merging folders and replacing files.
+4. Start the server:
+   cd C:\dev\crypto-graveyard
+   npx http-server . -p 8000
+5. Open http://127.0.0.1:8000
+
+INTERACTIONS
+------------
+- Click "Approach the Gates" to start the five-stage opening.
+- The gates open; the soil moves; two hands emerge; the Coroner reveal appears; the welcome stage follows.
+- Click "Skip introduction" to jump to the welcome.
+- Click "Enter the Cemetery" to move to the eight-case grounds.
+- Case records are loaded from data/cases/index.json.
+
+KNOWN LIMITATIONS — PLEASE READ
+-------------------------------
+- The cemetery environment is a generated, text-free background image.
+- The Coroner is a temporary stylized CSS illustration, not the final painterly character asset.
+- The hands are SVG animation layers, not photographic sprites.
+- No audio is included. There is no autoplay audio.
+- The eight grave tiles are a directory preview; case investigation links are not implemented in this batch.
+- The entrance is a web cinematic, not a pre-rendered video.
+
+TEST
+----
+Run:
+  node scripts/validate-final-pack.mjs
+
+Then test the browser at 360px, 390px, 768px, and 1280px.
+Check gate animation, hands, Coroner reveal, skip, Enter button, navigation, and case list.
+Respect prefers-reduced-motion and keyboard navigation.
+
+Do not commit or push until the project owner reviews the result.

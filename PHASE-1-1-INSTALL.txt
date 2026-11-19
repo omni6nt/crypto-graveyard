@@ -1,0 +1,19 @@
+CRYPTO GRAVEYARD — PHASE 1.1 VISUAL FIX
+
+Replaces:
+- src/css/components.css
+
+Install:
+1. Stop the local server with Ctrl+C.
+2. Back up src/css/components.css.
+3. Extract this ZIP into C:\dev\crypto-graveyard, replacing the file.
+4. Restart: npx http-server . -p 8000
+5. Hard refresh the browser with Ctrl+Shift+R.
+
+Fixes:
+- Hides the duplicate cinematic story card during the final welcome stage.
+- Gives the Coroner dialogue panel more room and prominence.
+- Removes the mismatched SVG wireframe gate overlay because the background art already depicts an open gate.
+
+Known limitation:
+The gate-opening motion now awaits dedicated closed/open gate artwork. This patch intentionally removes the visibly mismatched overlay rather than pretending it is a finished gate animation.

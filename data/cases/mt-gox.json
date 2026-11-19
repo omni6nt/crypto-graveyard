@@ -1,34 +1,442 @@
 {
   "id": "mt-gox",
   "name": "Mt. Gox",
-  "shortDescription": "[PLACEHOLDER — research required]",
-  "classification": "[PLACEHOLDER — research required]",
-  "researchCutoff": "[PLACEHOLDER — research required]",
+  "shortDescription": "A major Bitcoin exchange halted withdrawals in February 2014, entered bankruptcy, and later moved into civil rehabilitation for creditor repayment.",
+  "classification": "Bitcoin exchange collapse followed by bankruptcy and civil rehabilitation",
+  "researchCutoff": "2026-11-19",
   "identity": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Mt. Gox Co., Ltd. operated an online bitcoin exchange. The bankruptcy trustee's July 23, 2014 report states that the company applied for civil rehabilitation on February 28, 2014. The trustee described a highly outsourced operating structure: exchange operations were entrusted to parent company TIBANNE Co., Ltd.; Mt. Gox had no employees of its own and used equipment and office space leased or subleased through the parent.",
+    "sourceIds": [
+      "mtgox-src-001"
+    ]
   },
   "background": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Users relied on Mt. Gox as a custodial venue for bitcoin trading and withdrawals. On February 7, 2014, the company publicly acknowledged withdrawal problems and said it was pausing all bitcoin withdrawals while it investigated. Contemporaneous reporting described earlier withdrawal delays, but those reports do not prove every customer knew the exchange's full financial condition.",
+    "sourceIds": [
+      "mtgox-src-004",
+      "mtgox-src-005",
+      "mtgox-src-007"
+    ]
   },
   "incident": {
-    "description": "[PLACEHOLDER — research required]",
-    "claimType": "[PLACEHOLDER]",
-    "sourceIds": []
+    "description": "Mt. Gox announced on February 7, 2014 that all bitcoin withdrawals were paused while it investigated a technical issue. On February 10, CoinDesk reported that withdrawals would remain suspended indefinitely. By late February, trading stopped and the website went offline. On February 28, the company applied for civil rehabilitation and stated that approximately 750,000 customer bitcoins and 100,000 company bitcoins appeared to be missing, alongside a JPY 2.8 billion cash discrepancy. These were preliminary company disclosures, not independently audited final figures. The trustee's July 2014 report records that the rehabilitation application attributed insolvency to potential illicit transfers through illegal access exploiting a bug in the basic bitcoin system and an unexplained decrease in cash deposits. The trustee stated that investigation into bitcoin holdings was continuing.",
+    "claimType": "official_statement",
+    "sourceIds": [
+      "mtgox-src-001",
+      "mtgox-src-003",
+      "mtgox-src-004",
+      "mtgox-src-005"
+    ]
   },
   "causeAnalysis": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "The official record does not support reducing the entire collapse to one conclusively established bug. The February 28 company statement and rehabilitation application described suspected illicit transfers and a possible bug-related mechanism, but the trustee's July 2014 report says the investigation into remaining bitcoin was still ongoing. The same application cited a decrease in cash deposits whose reason had not yet been identified. The trustee also described substantial outsourcing of operations and the company's lack of employees. Analysis: the case involves custody, operational oversight, accounting, security and insolvency questions; the available records do not justify presenting one technical mechanism as the proven explanation for every missing bitcoin or the full financial shortfall.",
+    "sourceIds": [
+      "mtgox-src-001",
+      "mtgox-src-003"
+    ]
   },
-  "timeline": [],
-  "warningSigns": [],
+  "timeline": [
+    {
+      "date": "2014-02-07",
+      "event": "Mt. Gox announced it was temporarily pausing all bitcoin withdrawals while investigating a technical issue; the reproduced company statement said trading could continue.",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "mtgox-src-004"
+      ]
+    },
+    {
+      "date": "2014-02-10",
+      "event": "CoinDesk reported that Mt. Gox had announced bitcoin withdrawals would remain suspended indefinitely and removed the exchange from its Bitcoin Price Index.",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "mtgox-src-005"
+      ]
+    },
+    {
+      "date": "2014-02-28",
+      "event": "By the February 28 filing, access to the website for the relevant transactions had been suspended, according to the trustee's report. The exact date of the website shutdown is not specified in that report.",
+      "claimType": "documented_fact",
+      "sourceIds": [
+        "mtgox-src-001"
+      ]
+    },
+    {
+      "date": "2014-02-28",
+      "event": "Mt. Gox applied for civil rehabilitation. Its announcement disclosed preliminary estimates of approximately 750,000 customer BTC and 100,000 company BTC missing, plus a JPY 2.8 billion cash discrepancy; the investigation was ongoing.",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "mtgox-src-003"
+      ]
+    },
+    {
+      "date": "2014-04-16",
+      "event": "Tokyo District Court dismissed the civil rehabilitation application and ordered provisional administration, according to the trustee's report.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "mtgox-src-001"
+      ]
+    },
+    {
+      "date": "2014-04-24",
+      "event": "Tokyo District Court ordered commencement of bankruptcy proceedings and appointed Nobuaki Kobayashi as trustee.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "mtgox-src-001"
+      ]
+    },
+    {
+      "date": "2014-07-23",
+      "event": "The trustee reported securing private keys for addresses holding 202,106.00072 BTC; investigation into possible additional bitcoin in company data was ongoing.",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "mtgox-src-001"
+      ]
+    },
+    {
+      "date": "2018-06-22",
+      "event": "Tokyo District Court commenced civil rehabilitation proceedings; earlier bankruptcy proceedings were stayed and a civil rehabilitation trustee was appointed.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "mtgox-src-002"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "event": "The trustee announced that Base Repayment, Early Lump-Sum Repayment and Intermediate Repayment deadlines were extended to October 31, 2027 Japan Time.",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "mtgox-src-006"
+      ]
+    }
+  ],
+  "warningSigns": [
+    {
+      "title": "Withdrawal delays before the halt",
+      "description": "Contemporaneous reporting and a later civil litigation record describe customer-facing withdrawal delays before the full suspension.",
+      "evidenceAvailable": "Some customers reported delays and raised support issues; this does not prove every customer could infer insolvency or the underlying cause.",
+      "visibility": "pre_incident",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "mtgox-src-004",
+        "mtgox-src-007"
+      ]
+    },
+    {
+      "title": "All bitcoin withdrawals paused",
+      "description": "Mt. Gox publicly announced on February 7, 2014 that all bitcoin withdrawals were paused while it investigated a technical issue.",
+      "evidenceAvailable": "The announcement was public and directly relevant to customers holding bitcoin on the exchange. It was an operational warning, but not by itself proof of theft or insolvency.",
+      "visibility": "during_incident",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "mtgox-src-004"
+      ]
+    },
+    {
+      "title": "Indefinite withdrawal suspension",
+      "description": "On February 10, CoinDesk reported that Mt. Gox had said bitcoin withdrawals would remain suspended indefinitely and removed the exchange from its price index.",
+      "evidenceAvailable": "The indefinite suspension and index removal were publicly reported. Customers could reasonably treat prolonged inability to withdraw as serious counterparty and operational risk.",
+      "visibility": "during_incident",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "mtgox-src-005"
+      ]
+    },
+    {
+      "title": "Trading shutdown and inaccessible website",
+      "description": "By late February 2014, trading had stopped and the website was unavailable; the trustee's report confirms access had been suspended by the February 28 filing.",
+      "evidenceAvailable": "This was an acute crisis signal rather than an early warning. The trustee's report is retrospective confirmation of the website-access suspension.",
+      "visibility": "during_incident",
+      "claimType": "documented_fact",
+      "sourceIds": [
+        "mtgox-src-001"
+      ]
+    },
+    {
+      "title": "Company disclosure of missing bitcoin and cash discrepancy",
+      "description": "On February 28, Mt. Gox disclosed preliminary estimates of missing customer and company bitcoin and a cash discrepancy while its investigation remained incomplete.",
+      "evidenceAvailable": "The disclosure was public. Figures must be attributed to Mt. Gox and described as preliminary rather than independently audited final totals.",
+      "visibility": "during_incident",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "mtgox-src-003"
+      ]
+    }
+  ],
   "aftermath": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "The Tokyo District Court ordered bankruptcy proceedings on April 24, 2014. In July 2014, the trustee reported securing private keys for addresses holding 202,106.00072 BTC and said investigation into possible additional bitcoin in company data was ongoing; this is not a total recovery percentage or proof that all other bitcoin was irretrievably lost. Civil rehabilitation proceedings commenced on June 22, 2018, staying the earlier bankruptcy proceedings. As of the research cutoff, the trustee's official website states that deadlines for Base Repayment, Early Lump-Sum Repayment and Intermediate Repayment were extended on October 16, 2026 from October 31, 2026 to October 31, 2027 (Japan Time). The trustee also warns creditors about fraudulent websites and emails impersonating Mt. Gox or the trustee. Repayment deadlines do not prove every creditor has been paid; actual repayment depends on creditor procedures and individual claim status.",
+    "sourceIds": [
+      "mtgox-src-001",
+      "mtgox-src-002",
+      "mtgox-src-006"
+    ]
   },
-  "lessons": [],
-  "sources": [],
+  "lessons": [
+    {
+      "audience": "users",
+      "lesson": "A custodial exchange balance depends on the operator's custody, accounting and withdrawal systems. Persistent withdrawal delays or a withdrawal halt should be treated as counterparty and operational-risk signals, not dismissed as ordinary inconvenience.",
+      "sourceIds": [
+        "mtgox-src-004",
+        "mtgox-src-005",
+        "mtgox-src-007"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "Operational security includes governance of vendors, systems, data and access. The trustee described exchange operations and infrastructure as heavily outsourced; operators need clear accountability, independent controls and secure access to critical systems.",
+      "sourceIds": [
+        "mtgox-src-001"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "Do not communicate a suspected technical cause as proven before investigation supports it. Publish what is known, what remains unknown, and how customer assets and liabilities are being investigated.",
+      "sourceIds": [
+        "mtgox-src-001",
+        "mtgox-src-003"
+      ]
+    },
+    {
+      "audience": "users",
+      "lesson": "During long-running rehabilitation proceedings, verify repayment notices through the official trustee website. The trustee has warned about impersonation websites and emails targeting creditors.",
+      "sourceIds": [
+        "mtgox-src-006"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "mtgox-src-001",
+      "title": "Report under Article 157 of the Bankruptcy Act",
+      "publisher": "Mt. Gox Bankruptcy Trustee / Tokyo District Court",
+      "author": "Nobuaki Kobayashi",
+      "date": "2014-07-23",
+      "url": "https://www.mtgox.com/img/pdf/20140723_report_en.pdf",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Exchange identity and February 28, 2014 rehabilitation application",
+        "Application's attributed causes of insolvency",
+        "April 2014 provisional administration and bankruptcy",
+        "202,106.00072 BTC private-key custody and ongoing investigation",
+        "Outsourced operating structure"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Official trustee report; English translation says Japanese original governs if discrepancies."
+    },
+    {
+      "id": "mtgox-src-002",
+      "title": "Announcement of Commencement of Civil Rehabilitation Proceedings",
+      "publisher": "Mt. Gox Civil Rehabilitation Trustee / Tokyo District Court",
+      "author": null,
+      "date": "2018-06-22",
+      "url": "https://www.mtgox.com/img/pdf/20180622_announcement_en.pdf",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Civil rehabilitation commencement June 22, 2018",
+        "Bankruptcy proceedings stayed and trustee appointed"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Official trustee announcement."
+    },
+    {
+      "id": "mtgox-src-003",
+      "title": "Announcement Regarding an Application for Commencement of a Procedure of Civil Rehabilitation",
+      "publisher": "Mt. Gox Co., Ltd.",
+      "author": "Mark Karpeles",
+      "date": "2014-02-28",
+      "url": "https://www.mtgox.com/img/pdf/20140228-announcement_eng.pdf",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Company's preliminary missing bitcoin estimates",
+        "Company's reported JPY 2.8 billion cash discrepancy",
+        "Company's application for civil rehabilitation"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Company statement at filing; figures and suspected mechanism were preliminary."
+    },
+    {
+      "id": "mtgox-src-004",
+      "title": "Mt. Gox Halts ALL Bitcoin Withdrawals, Price Drop Follows",
+      "publisher": "CoinDesk",
+      "author": "Jon Southurst",
+      "date": "2014-02-07",
+      "url": "https://www.coindesk.com/markets/2014/02/07/mt-gox-halts-all-bitcoin-withdrawals-price-drop-follows",
+      "sourceType": "secondary",
+      "claimsSupported": [
+        "February 7 public withdrawal-pause announcement",
+        "Contemporaneous context on withdrawal problems"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Contemporaneous specialist reporting reproducing company statement."
+    },
+    {
+      "id": "mtgox-src-005",
+      "title": "CoinDesk Removes Mt. Gox from Bitcoin Price Index",
+      "publisher": "CoinDesk",
+      "author": null,
+      "date": "2014-02-10",
+      "url": "https://www.coindesk.com/markets/2014/02/10/coindesk-removes-mt-gox-from-bitcoin-price-index",
+      "sourceType": "secondary",
+      "claimsSupported": [
+        "Indefinite bitcoin withdrawal suspension",
+        "Removal from CoinDesk Bitcoin Price Index"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Contemporaneous specialist publication."
+    },
+    {
+      "id": "mtgox-src-006",
+      "title": "MtGox.com — official creditor and repayment notices",
+      "publisher": "Mt. Gox Civil Rehabilitation Trustee",
+      "author": null,
+      "date": "2026-10-16",
+      "url": "https://www.mtgox.com/",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Repayment deadlines extended to October 31, 2027 Japan Time",
+        "Official warning about impersonation websites and emails"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Official trustee website; homepage links to dated notice."
+    },
+    {
+      "id": "mtgox-src-007",
+      "title": "Case 1:14-cv-01437, Document 410",
+      "publisher": "U.S. District Court for the Northern District of Illinois (GovInfo)",
+      "author": null,
+      "date": "2019-03-12",
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ilnd-1_14-cv-01437/pdf/USCOURTS-ilnd-1_14-cv-01437-4.pdf",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Civil litigation record describing customer withdrawal complaints and February 7, 2014 halt"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Civil litigation document; allegations and declarations recited in it are not all judicial findings."
+    }
+  ],
   "intuitionReferences": [],
-  "examination": []
+  "examination": [
+    {
+      "id": "mtgox-exam-001",
+      "prompt": "What did Mt. Gox announce on February 7, 2014?",
+      "options": [
+        "It had completed all creditor repayments.",
+        "It was temporarily pausing all bitcoin withdrawals while investigating a technical issue.",
+        "The Tokyo District Court had commenced civil rehabilitation.",
+        "All trading and website operations had permanently ended."
+      ],
+      "defensibleAnswers": [
+        "It was temporarily pausing all bitcoin withdrawals while investigating a technical issue."
+      ],
+      "explanation": "The February 7 statement reproduced by CoinDesk says all bitcoin withdrawals were paused while the company investigated a technical issue, while trading could continue. A withdrawal halt is a serious operational warning but does not alone establish the underlying cause.",
+      "visibility": "during_incident",
+      "difficulty": "low",
+      "learningObjective": "Recognize a public operational warning and distinguish it from a final legal outcome.",
+      "sourceIds": [
+        "mtgox-src-004"
+      ]
+    },
+    {
+      "id": "mtgox-exam-002",
+      "prompt": "How should the February 28, 2014 missing-bitcoin figures be described?",
+      "options": [
+        "As final amounts independently audited by the trustee.",
+        "As preliminary figures disclosed by Mt. Gox while the investigation was ongoing.",
+        "As the exact amount later repaid to creditors.",
+        "As a court finding that every missing bitcoin was stolen through one confirmed exploit."
+      ],
+      "defensibleAnswers": [
+        "As preliminary figures disclosed by Mt. Gox while the investigation was ongoing."
+      ],
+      "explanation": "The approximately 750,000 customer BTC and 100,000 company BTC figures came from Mt. Gox's February 28 announcement. Attribute them to the company; do not present them as an independent audit or final judicial finding.",
+      "visibility": "during_incident",
+      "difficulty": "medium",
+      "learningObjective": "Attribute company disclosures accurately and preserve uncertainty.",
+      "sourceIds": [
+        "mtgox-src-003"
+      ]
+    },
+    {
+      "id": "mtgox-exam-003",
+      "prompt": "What did the July 2014 trustee report say about the suspected cause of insolvency?",
+      "options": [
+        "It conclusively proved one bug caused every missing bitcoin and all cash losses.",
+        "It recorded that the rehabilitation application attributed insolvency to potential illicit transfers exploiting a bug and a decrease in cash deposits whose reason was then unknown.",
+        "It said no bitcoin had disappeared.",
+        "It attributed the entire shortfall to a later market-price decline."
+      ],
+      "defensibleAnswers": [
+        "It recorded that the rehabilitation application attributed insolvency to potential illicit transfers exploiting a bug and a decrease in cash deposits whose reason was then unknown."
+      ],
+      "explanation": "The trustee's report describes what the company's application said and notes that the cash-deposit decrease had not yet been explained. The investigation into bitcoin holdings was still ongoing. The suspected mechanism must be attributed and qualified.",
+      "visibility": "hindsight",
+      "difficulty": "high",
+      "learningObjective": "Distinguish an application’s stated explanation from a completed forensic finding.",
+      "sourceIds": [
+        "mtgox-src-001"
+      ]
+    },
+    {
+      "id": "mtgox-exam-004",
+      "prompt": "Which signal was publicly observable to customers before the February 28 rehabilitation application?",
+      "options": [
+        "The trustee's July 2014 report.",
+        "The June 2018 civil rehabilitation order.",
+        "The February 7 announcement pausing all bitcoin withdrawals.",
+        "The October 2026 repayment deadline extension."
+      ],
+      "defensibleAnswers": [
+        "The February 7 announcement pausing all bitcoin withdrawals."
+      ],
+      "explanation": "The withdrawal pause was announced publicly on February 7. The later trustee report, rehabilitation order and 2026 deadline extension were not available at that earlier point. This tests what was observable at the time, not what became clear later.",
+      "visibility": "during_incident",
+      "difficulty": "low",
+      "learningObjective": "Separate contemporaneous signals from hindsight information.",
+      "sourceIds": [
+        "mtgox-src-004",
+        "mtgox-src-001",
+        "mtgox-src-002",
+        "mtgox-src-006"
+      ]
+    },
+    {
+      "id": "mtgox-exam-005",
+      "prompt": "What is the most defensible interpretation of the 202,106.00072 BTC figure in the trustee's July 2014 report?",
+      "options": [
+        "It was the total amount repaid to all creditors.",
+        "It was the amount of bitcoin held at addresses for which the trustee secured the private keys, while investigation into possible additional bitcoin continued.",
+        "It proved every other bitcoin had been permanently destroyed.",
+        "It was the company's total customer liability."
+      ],
+      "defensibleAnswers": [
+        "It was the amount of bitcoin held at addresses for which the trustee secured the private keys, while investigation into possible additional bitcoin continued."
+      ],
+      "explanation": "The trustee said private keys to addresses managing 202,106.00072 BTC had been secured and that investigation into bitcoin remaining in company data was ongoing. The figure is not total customer claims, total loss or completed repayment.",
+      "visibility": "hindsight",
+      "difficulty": "high",
+      "learningObjective": "Interpret asset-recovery figures without overstating what they prove.",
+      "sourceIds": [
+        "mtgox-src-001"
+      ]
+    },
+    {
+      "id": "mtgox-exam-006",
+      "prompt": "What is the current official deadline for the Base, Early Lump-Sum and Intermediate Repayment tracks as of November 19, 2026?",
+      "options": [
+        "October 31, 2025.",
+        "October 31, 2026.",
+        "October 31, 2027 (Japan Time).",
+        "All repayment deadlines were abolished."
+      ],
+      "defensibleAnswers": [
+        "October 31, 2027 (Japan Time)."
+      ],
+      "explanation": "The official trustee website states that on October 16, 2026 the deadlines changed from October 31, 2026 to October 31, 2027. An extension does not mean every creditor has been paid; creditors should rely on official trustee channels and check their own claim status.",
+      "visibility": "hindsight",
+      "difficulty": "medium",
+      "learningObjective": "Verify current recovery status using an official source and avoid assuming repayment completion.",
+      "sourceIds": [
+        "mtgox-src-006"
+      ]
+    }
+  ]
 }

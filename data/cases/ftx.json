@@ -1,34 +1,475 @@
 {
   "id": "ftx",
   "name": "FTX",
-  "shortDescription": "[PLACEHOLDER — research required]",
-  "classification": "[PLACEHOLDER — research required]",
-  "researchCutoff": "[PLACEHOLDER — research required]",
+  "shortDescription": "A centralized crypto exchange collapsed in November 2022 after a liquidity crisis exposed severe customer-fund and governance failures.",
+  "classification": "Centralized exchange collapse; founder's fraud and conspiracy convictions affirmed on appeal",
+  "researchCutoff": "2026-11-19",
   "identity": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "FTX was a centralized cryptocurrency exchange founded in 2019. Customers could trade spot cryptocurrencies and derivatives, borrow funds and trade on margin. Alameda Research, a cryptocurrency hedge fund and trading firm founded in 2017, was closely connected to FTX. The Second Circuit recorded that Sam Bankman-Fried had substantial ownership stakes in and controlled both entities. By 2022, FTX customers traded approximately $10–15 billion per day, and Alameda was FTX's largest customer and primary market maker.",
+    "sourceIds": [
+      "ftx-src-001"
+    ]
   },
   "background": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Alameda's market-making role was supported by a substantial line of credit from FTX. The Second Circuit described the arrangement as allowing Alameda to maintain negative balances on FTX's books. This created a conflict between an exchange holding customer assets and an affiliated trading firm receiving exceptional access to credit and liquidity. The court also recounts public assurances that customer funds were safe and used only for authorized transactions; those assurances must be distinguished from practices established at trial.",
+    "sourceIds": [
+      "ftx-src-001",
+      "ftx-src-002"
+    ]
   },
   "incident": {
-    "description": "[PLACEHOLDER — research required]",
-    "claimType": "[PLACEHOLDER]",
-    "sourceIds": []
+    "description": "In 2022, falling crypto-market values and tighter financial conditions reduced Alameda's net asset value from more than $40 billion in late 2021 to around $10 billion in June 2022, according to the Second Circuit. A version of Alameda's balance sheet was published by a crypto news site on November 2, 2022, triggering widespread customer withdrawals. Withdrawals escalated over the following days. On November 11, 2022, FTX filed for bankruptcy after becoming unable to meet customer withdrawal requests. Separately, a jury convicted Sam Bankman-Fried of seven fraud and conspiracy counts related to the exchange and trading firm; the Second Circuit affirmed that judgment on June 12, 2026. This legal outcome is specific to Bankman-Fried and must not be generalized to every FTX employee or customer.",
+    "claimType": "court_finding",
+    "sourceIds": [
+      "ftx-src-001",
+      "ftx-src-002",
+      "ftx-src-007"
+    ]
   },
   "causeAnalysis": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Analysis: the collapse was not simply a token-price event. The judicial record supports a combination of concentrated control over affiliated businesses, exceptional credit and negative-balance treatment for Alameda, customer-fund misuse established at Bankman-Fried's criminal trial, deteriorating asset values and a rapid withdrawal run. The November 2 balance-sheet report was a public catalyst, but Reuters said it could not independently verify the leaked document. Customers could observe the crisis sequence but could not necessarily see internal ledger permissions, privileged access or actual use of customer funds before the collapse. Separate visible liquidity signals from underlying governance and custody failures that became clear through later proceedings.",
+    "sourceIds": [
+      "ftx-src-001",
+      "ftx-src-002",
+      "ftx-src-007"
+    ]
   },
-  "timeline": [],
-  "warningSigns": [],
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "Alameda Research was founded, according to the Second Circuit's account.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "ftx-src-001"
+      ]
+    },
+    {
+      "date": "2019",
+      "event": "FTX was founded; Bankman-Fried served as CEO until shortly before its November 2022 bankruptcy.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "ftx-src-001"
+      ]
+    },
+    {
+      "date": "2021-12",
+      "event": "The Second Circuit later described Alameda's net asset value as exceeding $40 billion in late 2021.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "ftx-src-001"
+      ]
+    },
+    {
+      "date": "2022-06",
+      "event": "The Second Circuit recorded Alameda's net asset value at around $10 billion in June 2022 after a substantial decline.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "ftx-src-001"
+      ]
+    },
+    {
+      "date": "2022-11-02",
+      "event": "A version of Alameda's balance sheet was published by a crypto news site; the Second Circuit said this triggered widespread FTX customer withdrawals. Reuters noted it could not independently verify the leaked balance sheet.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "ftx-src-001",
+        "ftx-src-007"
+      ]
+    },
+    {
+      "date": "2022-11-11",
+      "event": "FTX filed for bankruptcy because it was unable to meet customer withdrawal requests.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "ftx-src-001"
+      ]
+    },
+    {
+      "date": "2024-08-08",
+      "event": "The CFTC announced a consent order requiring $8.7 billion in restitution and $4 billion in disgorgement against FTX and Alameda; these ordered amounts are not individual customer distribution totals.",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "ftx-src-003"
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "event": "The Second Circuit affirmed Bankman-Fried's judgment of conviction on seven fraud and conspiracy counts.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "ftx-src-001"
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "event": "The FTX Recovery Trust completed a fifth distribution of approximately $900 million to eligible holders of allowed claims; plan-defined cumulative percentages differed by class.",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "ftx-src-004",
+        "ftx-src-005"
+      ]
+    }
+  ],
+  "warningSigns": [
+    {
+      "title": "Affiliated exchange and trading firm",
+      "description": "FTX and Alameda were under substantial common ownership and control; Alameda was FTX's largest customer and primary market maker.",
+      "evidenceAvailable": "The full extent of control and internal arrangements emerged through later court proceedings. Ordinary customers should not be assumed to have known the details before collapse.",
+      "visibility": "hindsight",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "ftx-src-001",
+        "ftx-src-002"
+      ]
+    },
+    {
+      "title": "Exceptional credit and negative balances",
+      "description": "The Second Circuit described a substantial FTX credit line for Alameda and its ability to maintain negative balances on FTX's books.",
+      "evidenceAvailable": "These internal account and risk-control arrangements were not necessarily visible to ordinary customers before the collapse.",
+      "visibility": "hindsight",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "ftx-src-001"
+      ]
+    },
+    {
+      "title": "Public balance-sheet concerns",
+      "description": "A version of Alameda's balance sheet was published on November 2, 2022 and triggered widespread withdrawals, according to the Second Circuit.",
+      "evidenceAvailable": "The publication and resulting public concern were observable. Reuters said it could not independently verify the leaked document, so its contents should be treated as reported rather than independently established by Reuters.",
+      "visibility": "during_incident",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "ftx-src-001",
+        "ftx-src-007"
+      ]
+    },
+    {
+      "title": "Withdrawal surge",
+      "description": "Customer withdrawals escalated rapidly after the November 2 publication.",
+      "evidenceAvailable": "Customers could observe withdrawal delays and system behavior, but could not independently determine the exchange's complete asset and liability position.",
+      "visibility": "during_incident",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "ftx-src-001"
+      ]
+    },
+    {
+      "title": "Failure to meet withdrawals",
+      "description": "FTX filed for bankruptcy on November 11, 2022 because it was unable to meet customer withdrawal requests.",
+      "evidenceAvailable": "The inability to process withdrawals and bankruptcy filing were unmistakable crisis signals, not early warnings months in advance.",
+      "visibility": "during_incident",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "ftx-src-001"
+      ]
+    }
+  ],
   "aftermath": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "FTX entered Chapter 11 proceedings in November 2022. In August 2024, the CFTC announced a consent order providing for $12.7 billion in monetary relief ($8.7 billion restitution and $4 billion disgorgement); this is not the same as money already paid to each customer. The Recovery Trust reported $10.312 billion distributed through June 30, 2026 and approximately $900 million more distributed on July 31, 2026. The Trust stated that after the July distribution, allowed and estimated allowed interest-bearing claims had received or been reserved for at least 100% cumulative recovery under the plan's calculations. This does not mean every claim was allowed, every claimant completed distribution steps, or customers received original crypto assets in kind. The official FAQ dated September 13, 2026 states that disputed claims remain under reconciliation and allowed-claim holders must satisfy KYC, tax and distribution-provider requirements. Status is stated as of the research cutoff.",
+    "sourceIds": [
+      "ftx-src-001",
+      "ftx-src-003",
+      "ftx-src-004",
+      "ftx-src-005",
+      "ftx-src-006"
+    ]
   },
-  "lessons": [],
-  "sources": [],
+  "lessons": [
+    {
+      "audience": "users",
+      "lesson": "A custodial exchange balance is a claim on the operator, not independent proof that assets are segregated, unencumbered and immediately available. Consider custody arrangements and counterparty exposure before leaving substantial assets on an exchange.",
+      "sourceIds": [
+        "ftx-src-001",
+        "ftx-src-002"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "An exchange and affiliated trading firm need enforceable separation, independent governance, transparent accounting and controls that prevent privileged access from silently turning customer liabilities into affiliate financing.",
+      "sourceIds": [
+        "ftx-src-001",
+        "ftx-src-002"
+      ]
+    },
+    {
+      "audience": "users",
+      "lesson": "Liquidity and solvency are different. A platform may display account balances while lacking enough liquid assets to satisfy withdrawals; a sudden withdrawal restriction is an immediate crisis signal, not a full solvency assessment.",
+      "sourceIds": [
+        "ftx-src-001"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "Disclose material conflicts and custody practices accurately. Public assurances about customer asset safety must match actual controls, accounting and permitted use of customer assets.",
+      "sourceIds": [
+        "ftx-src-001",
+        "ftx-src-002"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ftx-src-001",
+      "title": "United States v. Bankman-Fried, No. 24-961-cr",
+      "publisher": "U.S. Court of Appeals for the Second Circuit (opinion hosted by Justia)",
+      "author": null,
+      "date": "2026-06-12",
+      "url": "https://law.justia.com/cases/federal/appellate-courts/ca2/24-961/24-961-2026-06-12.html",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "FTX and Alameda relationship and control",
+        "Alameda credit line and negative balances",
+        "Alameda asset-value decline, November 2022 balance-sheet publication, withdrawal surge and bankruptcy",
+        "Bankman-Fried conviction and appellate affirmance"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Judicial opinion. Distinguish the court's holding from its account of trial evidence."
+    },
+    {
+      "id": "ftx-src-002",
+      "title": "FTX Trading, Ltd. v. Vara, No. 23-2297",
+      "publisher": "U.S. Court of Appeals for the Third Circuit",
+      "author": null,
+      "date": "2024-01-19",
+      "url": "https://law.justia.com/cases/federal/appellate-courts/ca3/23-2297/23-2297-2024-01-19.html",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "FTX and Alameda common ownership and relationship",
+        "Customer-fund transfers and concealment described in bankruptcy appeal"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Judicial opinion in a bankruptcy-related appeal; not every passage is a separate criminal verdict."
+    },
+    {
+      "id": "ftx-src-003",
+      "title": "CFTC Obtains $12.7 Billion Judgment Against FTX and Alameda",
+      "publisher": "U.S. Commodity Futures Trading Commission",
+      "author": null,
+      "date": "2024-08-08",
+      "url": "https://www.cftc.gov/PressRoom/PressReleases/8938-24",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Consent order for $8.7 billion restitution and $4 billion disgorgement"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Regulator release describing a consent order, not payments already received by every customer."
+    },
+    {
+      "id": "ftx-src-004",
+      "title": "FTX Announces Fifth Distribution of Approximately $900 Million to Creditors on July 31, 2026",
+      "publisher": "FTX Recovery Trust / PR Newswire",
+      "author": null,
+      "date": "2026-07-17",
+      "url": "https://www.prnewswire.com/news-releases/ftx-announces-fifth-distribution-of-approximately-900-million-to-creditors-on-july-31-2026-302828726.html",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Fifth distribution of approximately $900 million to eligible allowed claims",
+        "Class-specific cumulative distribution percentages and eligibility"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Official trust/company announcement; not all customers or claims are necessarily eligible."
+    },
+    {
+      "id": "ftx-src-005",
+      "title": "Q2 2026 Financial Report, Case 22-11068-KBO, Doc. 36154",
+      "publisher": "U.S. Bankruptcy Court filing / FTX Recovery Trust",
+      "author": null,
+      "date": "2026-08-17",
+      "url": "https://document.epiq11.com/document/getdocumentbycode?docId=4606498&projectCode=FTX&source=DM",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "$10.312 billion distributed through June 30, 2026",
+        "Approximately $900 million subsequent distribution on July 31, 2026",
+        "Allowed and estimated allowed interest-bearing claims received or reserved for at least 100% cumulative recovery"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Court-filed report; plan recovery calculations do not mean every claimant has been paid or received original crypto in kind."
+    },
+    {
+      "id": "ftx-src-006",
+      "title": "Distributions Dashboard FAQs",
+      "publisher": "FTX Customer Support / Recovery Trust",
+      "author": null,
+      "date": "2026-09-13",
+      "url": "https://support.ftx.com/hc/en-us/articles/34522100742804-Distributions-Dashboard-FAQs",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Disputed claims remain under reconciliation",
+        "Allowed-claim distribution eligibility requires KYC, tax and distribution-provider steps"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Official support information, not an independent audit."
+    },
+    {
+      "id": "ftx-src-007",
+      "title": "Rise and fall of crypto exchange FTX",
+      "publisher": "Reuters (syndicated by Investing.com)",
+      "author": null,
+      "date": "2022-11-14",
+      "url": "https://www.investing.com/news/economy/rise-and-fall-of-crypto-exchange-ftx-2946299",
+      "sourceType": "secondary",
+      "claimsSupported": [
+        "Contemporaneous public chronology of November 2022"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Reuters noted it could not independently verify the leaked Alameda balance sheet."
+    },
+    {
+      "id": "ftx-src-008",
+      "title": "Post-confirmation Report for the Quarter Ended September 30, 2026 (Docket No. 36748)",
+      "publisher": "FTX Recovery Trust; U.S. Bankruptcy Court for the District of Delaware",
+      "author": "FTX Recovery Trust / responsible party Mary Cilia",
+      "date": "2026-10-21",
+      "url": "https://restructuring.ra.kroll.com/FTX/Home-DocketInfo",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Post-confirmation transfers and cash disbursements through September 30, 2026",
+        "General unsecured claims anticipated payments, cumulative paid, allowed claims and percentage paid",
+        "Quarterly reporting status; report is not a final report"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Official post-confirmation report, D.I. 36748, Case No. 22-11068. Page 2 reports $12,064,898,791 total cash disbursements since the effective date and $12,098,520,758 total transfers including non-cash property. Page 7 reports $14,041,636,146 anticipated general unsecured payments, $10,554,234,355 paid cumulatively, $10,980,650,701 allowed claims, and 96% paid of allowed claims. Do not equate anticipated payments less paid amounts with a final unpaid balance."
+    },
+    {
+      "id": "ftx-src-009",
+      "title": "Motion for Further Extension of Claims Objection Deadline (Docket No. 36919)",
+      "publisher": "FTX Recovery Trust; U.S. Bankruptcy Court for the District of Delaware",
+      "author": null,
+      "date": "2026-11-05",
+      "url": "https://restructuring.ra.kroll.com/FTX/Home-DocketInfo",
+      "sourceType": "reported",
+      "claimsSupported": [
+        "Trust requested extension of claims objection deadline to January 4, 2028",
+        "Hearing scheduled for November 19, 2026 at 1:00 p.m. ET"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Docket particulars supplied in the user's research material and secondary reporting; the actual motion PDF and post-hearing docket/order were not included in this evidence pack. This source entry is explicitly not primary-verified. The requested extension must not be described as granted without a court order."
+    }
+  ],
   "intuitionReferences": [],
-  "examination": []
+  "examination": [
+    {
+      "id": "ftx-exam-001",
+      "prompt": "Which description best matches the FTX–Alameda relationship in the Second Circuit's account?",
+      "options": [
+        "Alameda was an unrelated customer with no special access.",
+        "The entities had substantial common ownership and control, and Alameda was FTX's largest customer and primary market maker.",
+        "Alameda was a regulator supervising FTX.",
+        "FTX and Alameda had no financial relationship."
+      ],
+      "defensibleAnswers": [
+        "The entities had substantial common ownership and control, and Alameda was FTX's largest customer and primary market maker."
+      ],
+      "explanation": "The Second Circuit described common control, Alameda's market-making role and a substantial line of credit from FTX. The lesson is to examine related-party exposure, while recognizing customers may not have been able to see the full internal arrangement before collapse.",
+      "visibility": "hindsight",
+      "difficulty": "medium",
+      "learningObjective": "Identify governance and related-party concentration risk.",
+      "sourceIds": [
+        "ftx-src-001"
+      ]
+    },
+    {
+      "id": "ftx-exam-002",
+      "prompt": "What did Alameda's ability to maintain negative balances on FTX's books indicate?",
+      "options": [
+        "A guarantee that customer funds were segregated.",
+        "A special credit and risk-control arrangement exposing FTX to affiliate counterparty risk.",
+        "Proof Alameda held no assets.",
+        "Proof all FTX customers opted into lending."
+      ],
+      "defensibleAnswers": [
+        "A special credit and risk-control arrangement exposing FTX to affiliate counterparty risk."
+      ],
+      "explanation": "The appellate record describes a substantial credit line and negative-balance treatment for Alameda. This is a governance and control concern; ordinary customers should not be blamed for failing to observe internal ledger permissions that were not public.",
+      "visibility": "hindsight",
+      "difficulty": "high",
+      "learningObjective": "Understand related-party credit, custody and counterparty risk.",
+      "sourceIds": [
+        "ftx-src-001"
+      ]
+    },
+    {
+      "id": "ftx-exam-003",
+      "prompt": "How should the November 2, 2022 Alameda balance-sheet publication be treated?",
+      "options": [
+        "As a final audited statement proving every liability.",
+        "As a public report that triggered withdrawals, while the leaked document's accuracy should be qualified.",
+        "As a court judgment.",
+        "As proof FTT alone caused the collapse."
+      ],
+      "defensibleAnswers": [
+        "As a public report that triggered withdrawals, while the leaked document's accuracy should be qualified."
+      ],
+      "explanation": "The Second Circuit linked the publication to widespread withdrawals. Reuters said it could not independently verify the leaked balance sheet. Distinguish the observable publication and reaction from independent verification of the document's contents.",
+      "visibility": "during_incident",
+      "difficulty": "medium",
+      "learningObjective": "Evaluate source quality and uncertainty during a crisis.",
+      "sourceIds": [
+        "ftx-src-001",
+        "ftx-src-007"
+      ]
+    },
+    {
+      "id": "ftx-exam-004",
+      "prompt": "Which event showed FTX had reached an acute liquidity crisis?",
+      "options": [
+        "Alameda's founding in 2017.",
+        "FTX's founding in 2019.",
+        "FTX's November 11, 2022 bankruptcy filing after it could not meet withdrawal requests.",
+        "The June 2026 appellate decision."
+      ],
+      "defensibleAnswers": [
+        "FTX's November 11, 2022 bankruptcy filing after it could not meet withdrawal requests."
+      ],
+      "explanation": "The Second Circuit states FTX filed for bankruptcy because it could not meet customer withdrawal requests. This is an immediate crisis signal, not an early warning.",
+      "visibility": "during_incident",
+      "difficulty": "low",
+      "learningObjective": "Distinguish an acute liquidity event from background history.",
+      "sourceIds": [
+        "ftx-src-001"
+      ]
+    },
+    {
+      "id": "ftx-exam-005",
+      "prompt": "What is the accurate interpretation of the CFTC's $12.7 billion monetary-relief figure?",
+      "options": [
+        "Cash already received by every FTX customer.",
+        "A consent order comprising $8.7 billion restitution and $4 billion disgorgement.",
+        "The exact number of bitcoin missing from FTX.",
+        "The total value of FTT tokens."
+      ],
+      "defensibleAnswers": [
+        "A consent order comprising $8.7 billion restitution and $4 billion disgorgement."
+      ],
+      "explanation": "The CFTC described a consent order with those components. An amount ordered by a regulator or court must not be presented as money already received by each customer.",
+      "visibility": "hindsight",
+      "difficulty": "medium",
+      "learningObjective": "Interpret legal and financial figures without conflating orders with payments.",
+      "sourceIds": [
+        "ftx-src-003"
+      ]
+    },
+    {
+      "id": "ftx-exam-006",
+      "prompt": "Which statement most accurately describes the July 2026 creditor distribution status?",
+      "options": [
+        "Every customer received original cryptocurrency in full.",
+        "The Trust distributed approximately $900 million to eligible holders of allowed claims, with plan-defined percentages differing by class; disputed claims and procedural requirements remained relevant.",
+        "All proceedings involving every FTX participant ended.",
+        "The CFTC consent order was paid directly to every customer on that date."
+      ],
+      "defensibleAnswers": [
+        "The Trust distributed approximately $900 million to eligible holders of allowed claims, with plan-defined percentages differing by class; disputed claims and procedural requirements remained relevant."
+      ],
+      "explanation": "The Trust announcement and financial report describe a distribution to eligible allowed claims. The official FAQ explains disputed claims may remain under review and claimants must complete required steps. Plan recovery percentages do not mean every customer received original crypto or all claims were resolved.",
+      "visibility": "hindsight",
+      "difficulty": "high",
+      "learningObjective": "Read restructuring and recovery claims with attention to definitions, classes and eligibility.",
+      "sourceIds": [
+        "ftx-src-004",
+        "ftx-src-005",
+        "ftx-src-006"
+      ]
+    }
+  ]
 }

@@ -84,3 +84,12 @@ a:visited {
   font-size: var(--text-sm);
   color: var(--color-fog-grey);
 }
+
+
+/* Main brand title uses Pirata One; section headings use Grenze Gotisch.
+   Narrative text remains Merriweather and controls remain sans-serif. */
+.site-name,
+h1.section-heading {
+  font-family: var(--font-title);
+  letter-spacing: 0.025em;
+}

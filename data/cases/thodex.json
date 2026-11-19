@@ -1,34 +1,367 @@
 {
   "id": "thodex",
   "name": "Thodex",
-  "shortDescription": "[PLACEHOLDER — research required]",
-  "classification": "[PLACEHOLDER — research required]",
-  "researchCutoff": "[PLACEHOLDER — research required]",
+  "shortDescription": "Turkish crypto exchange Thodex became inaccessible in April 2021 amid withdrawal complaints and a fraud investigation.",
+  "classification": "Centralized exchange collapse and criminal proceedings; latest retrial outcome not independently verified",
+  "researchCutoff": "2026-11-19",
   "identity": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Thodex was a cryptocurrency exchange operating in Turkey. In April 2021, its website became inaccessible and users reported that withdrawals were unavailable. Turkish authorities opened an investigation and the financial-crimes watchdog blocked company bank accounts. Founder Faruk Fatih Özer later returned to Turkey after being arrested in Albania and extradited in April 2023.",
+    "sourceIds": [
+      "thodex-src-001",
+      "thodex-src-002",
+      "thodex-src-003",
+      "thodex-src-004"
+    ]
   },
   "background": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Thodex provided a centralized venue for customers to trade and hold crypto assets. The April 2021 reporting described maintenance announcements followed by an inaccessible website and withdrawal complaints. A reported figure of 400,000 members came from a lawyer who filed a complaint; it is not treated here as an independently verified victim count.",
+    "sourceIds": [
+      "thodex-src-001"
+    ]
   },
   "incident": {
-    "description": "[PLACEHOLDER — research required]",
-    "claimType": "[PLACEHOLDER]",
-    "sourceIds": []
+    "description": "In April 2021, Thodex's website became inaccessible and users reported that withdrawals were unavailable. Turkish prosecutors opened an investigation and MASAK blocked the company's bank accounts. Founder Faruk Fatih Özer was arrested in Albania in 2022 and extradited to Turkey in April 2023. In January 2025, Anadolu Agency reported that an Istanbul regional appellate court reversed parts of the trial judgment: the organized-crime count was set aside and the case returned to the trial court, while detention relating to fraud and money-laundering allegations continued. This research has not independently verified a later final retrial judgment as of November 19, 2026.",
+    "claimType": "reported_claim",
+    "sourceIds": [
+      "thodex-src-001",
+      "thodex-src-002",
+      "thodex-src-003",
+      "thodex-src-004"
+    ]
   },
   "causeAnalysis": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Analysis: the case demonstrates the risk of concentrated custody at a centralized exchange and the importance of withdrawal functionality, operational transparency and reliable access to customer assets. The available sources establish the user-facing shutdown and the subsequent investigation, but they do not provide a sufficiently complete primary forensic record to state exactly how all customer assets were handled, the final verified number of victims, or the definitive total loss. The 2025 appellate remand also means the original trial outcome cannot simply be described as the final legal position.",
+    "sourceIds": [
+      "thodex-src-001",
+      "thodex-src-002",
+      "thodex-src-003",
+      "thodex-src-004"
+    ]
   },
-  "timeline": [],
-  "warningSigns": [],
+  "timeline": [
+    {
+      "date": "2021-04",
+      "event": "Thodex issued maintenance and partnership-related notices before its website became inaccessible, according to contemporaneous reporting.",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "thodex-src-001"
+      ]
+    },
+    {
+      "date": "2021-04-22",
+      "event": "Anadolu Agency reported that Turkish prosecutors had opened an investigation and MASAK had blocked Thodex bank accounts; customers reported withdrawal problems.",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "thodex-src-001"
+      ]
+    },
+    {
+      "date": "2022-08-30",
+      "event": "Özer was arrested in Albania, according to later reporting.",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "thodex-src-004"
+      ]
+    },
+    {
+      "date": "2023-04-20",
+      "event": "Özer was extradited from Albania to Turkey.",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "thodex-src-004"
+      ]
+    },
+    {
+      "date": "2023-09",
+      "event": "A Turkish trial court imposed a very long sentence on Özer and other defendants; the precise judgment and sentencing counts require primary court-record review before publication.",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "thodex-src-002"
+      ]
+    },
+    {
+      "date": "2025-01-30",
+      "event": "Istanbul regional appellate court reversed portions of the judgment and remanded the case; custody on fraud and money-laundering allegations continued.",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "thodex-src-002",
+        "thodex-src-003"
+      ]
+    }
+  ],
+  "warningSigns": [
+    {
+      "title": "Maintenance notices followed by access failure",
+      "description": "The exchange issued maintenance-related notices before its website became inaccessible.",
+      "evidenceAvailable": "Customers could observe the notices and then the inability to access the platform; the full cause was not visible at the time.",
+      "visibility": "during_incident",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "thodex-src-001"
+      ]
+    },
+    {
+      "title": "Withdrawals unavailable",
+      "description": "Customers reported that the exchange would not process withdrawals.",
+      "evidenceAvailable": "This was directly observable to affected users and was a serious custody and counterparty warning.",
+      "visibility": "during_incident",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "thodex-src-001"
+      ]
+    },
+    {
+      "title": "Unclear explanation of service disruption",
+      "description": "The public notices described maintenance and a proposed partnership while withdrawal access was failing.",
+      "evidenceAvailable": "Customers could compare the official explanation with their inability to access funds, but could not independently establish the underlying asset position.",
+      "visibility": "during_incident",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "thodex-src-001"
+      ]
+    },
+    {
+      "title": "Large user-count claims lacked independent confirmation",
+      "description": "A complainant's lawyer said the platform had 400,000 members, of whom 390,000 were active.",
+      "evidenceAvailable": "The number was reported as a complainant's statement, not an audited total. This is a warning about how headline victim counts should be sourced.",
+      "visibility": "hindsight",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "thodex-src-001"
+      ]
+    },
+    {
+      "title": "Appellate reversal changed the legal posture",
+      "description": "The 2025 appellate court reversed part of the original judgment and remanded the case.",
+      "evidenceAvailable": "This is a later legal development; it was not a pre-collapse warning but matters when describing the case's current status.",
+      "visibility": "hindsight",
+      "claimType": "reported_claim",
+      "sourceIds": [
+        "thodex-src-002",
+        "thodex-src-003"
+      ]
+    }
+  ],
   "aftermath": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Özer was arrested in Albania in August 2022 and extradited to Turkey in April 2023. A Turkish trial court later imposed a very long sentence, but in January 2025 the Istanbul regional appellate court reversed parts of that judgment and returned the case to the trial court. Anadolu Agency reported that Özer's release on the organized-crime count did not end his detention on fraud and money-laundering allegations. The current final outcome of the remanded proceedings has not been independently established in this research batch. No definitive verified total of customer losses or completed repayment is stated.",
+    "sourceIds": [
+      "thodex-src-001",
+      "thodex-src-002",
+      "thodex-src-003",
+      "thodex-src-004"
+    ]
   },
-  "lessons": [],
-  "sources": [],
+  "lessons": [
+    {
+      "audience": "users",
+      "lesson": "Treat prolonged withdrawal failures and inaccessible exchange websites as serious custody and counterparty warnings; do not assume a platform's public statements prove assets remain available.",
+      "sourceIds": [
+        "thodex-src-001"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "Communicate service interruptions clearly, preserve customer access and records, and provide verifiable information about custody and liabilities during a crisis.",
+      "sourceIds": [
+        "thodex-src-001"
+      ]
+    },
+    {
+      "audience": "users",
+      "lesson": "Do not repeat victim counts or loss totals unless their source and verification status are clear.",
+      "sourceIds": [
+        "thodex-src-001"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "When criminal proceedings are ongoing or remanded, communicate procedural status precisely rather than presenting an earlier trial judgment as final.",
+      "sourceIds": [
+        "thodex-src-002",
+        "thodex-src-003"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "thodex-src-001",
+      "title": "Turkey opens probe into cryptocurrency platform Thodex",
+      "publisher": "Anadolu Agency",
+      "author": null,
+      "date": "2021-04-22",
+      "url": "https://www.aa.com.tr/en/economy/turkey-opens-probe-into-cryptocurrency-platform-thodex/2216920",
+      "sourceType": "secondary",
+      "claimsSupported": [
+        "Platform website inaccessible; withdrawal complaints; prosecutors investigation; MASAK bank-account block"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Contemporaneous reporting. Some user-count figures are attributed to a complainant, not independently verified."
+    },
+    {
+      "id": "thodex-src-002",
+      "title": "İstinaf, Thodex'in kurucusu Faruk Fatih Özer'in dolandırıcılık davasında kararını verdi",
+      "publisher": "Anadolu Agency",
+      "author": null,
+      "date": "2025-01-30",
+      "url": "https://www.aa.com.tr/tr/gundem/istinaf-thodexin-kurucusu-faruk-fatih-ozerin-dolandiricilik-davasinda-kararini-verdi/3467025",
+      "sourceType": "secondary",
+      "claimsSupported": [
+        "Istanbul regional appellate court reversed portions of trial judgment; acquittal/release on organized-crime count; fraud and money-laundering detention continued; case returned to trial court"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Reliable Turkish news agency report of appellate ruling; underlying Turkish court decision should be obtained before publication."
+    },
+    {
+      "id": "thodex-src-003",
+      "title": "Claim that Thodex founder Faruk Fatih Özer was released is false",
+      "publisher": "Anadolu Agency Fact Check",
+      "author": null,
+      "date": "2025-01-30",
+      "url": "https://www.aa.com.tr/tr/teyithatti/aktuel/thodex-kurucusu-faruk-fatih-ozer-tahliye-edildi-iddiasi/1818715",
+      "sourceType": "secondary",
+      "claimsSupported": [
+        "Clarifies that release from one charge did not mean release from custody because fraud case detention continued"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Fact-check report based on case developments and lawyer statement; use with appellate coverage."
+    },
+    {
+      "id": "thodex-src-004",
+      "title": "Thodex founder Faruk Fatih Özer arrested in Albania and extradited to Turkey",
+      "publisher": "Anadolu Agency",
+      "author": null,
+      "date": "2023-04-20",
+      "url": "https://www.aa.com.tr/en/turkiye/thodex-founder-faruk-fatih-ozer-extradited-to-turkiye/2876647",
+      "sourceType": "secondary",
+      "claimsSupported": [
+        "Arrest in Albania and extradition to Turkey in April 2023"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "Secondary reporting; verify against Turkish and Albanian extradition records."
+    }
+  ],
   "intuitionReferences": [],
-  "examination": []
+  "examination": [
+    {
+      "id": "thodex-exam-001",
+      "prompt": "What became publicly visible when Thodex entered crisis in April 2021?",
+      "options": [
+        "The exchange announced a successful IPO.",
+        "The website became inaccessible and customers reported that withdrawals were unavailable.",
+        "All customers received immediate repayment.",
+        "The platform was acquired by a central bank."
+      ],
+      "defensibleAnswers": [
+        "The website became inaccessible and customers reported that withdrawals were unavailable."
+      ],
+      "explanation": "Anadolu Agency reported the inaccessible website, complaints about unavailable withdrawals and a Turkish investigation. This was an observable operational warning, although the reported number of affected users came from a complainant.",
+      "visibility": "during_incident",
+      "difficulty": "low",
+      "learningObjective": "Recognize public operational failure signals.",
+      "sourceIds": [
+        "thodex-src-001"
+      ]
+    },
+    {
+      "id": "thodex-exam-002",
+      "prompt": "How should the reported figure of 400,000 Thodex members be treated?",
+      "options": [
+        "As an audited final count of victims.",
+        "As a figure attributed to a lawyer who filed a complaint, not an independently verified total.",
+        "As the number of people convicted.",
+        "As the amount of money lost in dollars."
+      ],
+      "defensibleAnswers": [
+        "As a figure attributed to a lawyer who filed a complaint, not an independently verified total."
+      ],
+      "explanation": "The 2021 report attributes the membership estimate to a complainant. It should not be presented as a final verified count of victims or losses.",
+      "visibility": "hindsight",
+      "difficulty": "medium",
+      "learningObjective": "Attribute numerical claims to their actual source.",
+      "sourceIds": [
+        "thodex-src-001"
+      ]
+    },
+    {
+      "id": "thodex-exam-003",
+      "prompt": "What happened to founder Faruk Fatih Özer after leaving Turkey?",
+      "options": [
+        "He was extradited from Albania to Turkey in April 2023.",
+        "He was acquitted in Albania and never returned.",
+        "He became the bankruptcy trustee.",
+        "He was sentenced in the United States."
+      ],
+      "defensibleAnswers": [
+        "He was extradited from Albania to Turkey in April 2023."
+      ],
+      "explanation": "Anadolu Agency reported his extradition in April 2023. This is a procedural event, not a finding of guilt by itself.",
+      "visibility": "hindsight",
+      "difficulty": "low",
+      "learningObjective": "Distinguish extradition from conviction.",
+      "sourceIds": [
+        "thodex-src-004"
+      ]
+    },
+    {
+      "id": "thodex-exam-004",
+      "prompt": "What did the Istanbul regional appellate court decide in January 2025?",
+      "options": [
+        "It affirmed every part of the original judgment without change.",
+        "It reversed the trial judgment on the organized-crime count and ordered release on that count, while detention on fraud and money-laundering allegations continued and the case returned to the trial court.",
+        "It dismissed every charge and ordered immediate release.",
+        "It transferred the case to the United States."
+      ],
+      "defensibleAnswers": [
+        "It reversed the trial judgment on the organized-crime count and ordered release on that count, while detention on fraud and money-laundering allegations continued and the case returned to the trial court."
+      ],
+      "explanation": "The January 30, 2025 Anadolu report describes a partial reversal and remand. It is essential not to interpret release on one count as acquittal or release from all custody.",
+      "visibility": "hindsight",
+      "difficulty": "high",
+      "learningObjective": "Interpret a partial appellate reversal accurately.",
+      "sourceIds": [
+        "thodex-src-002",
+        "thodex-src-003"
+      ]
+    },
+    {
+      "id": "thodex-exam-005",
+      "prompt": "Which conclusion is supported by the research currently assembled?",
+      "options": [
+        "A final retrial judgment in 2026 is confirmed.",
+        "The January 2025 appellate decision returned the case to the trial court; the latest final retrial outcome has not been independently verified in this research batch.",
+        "All customer claims have been repaid.",
+        "The founder has been acquitted of all allegations."
+      ],
+      "defensibleAnswers": [
+        "The January 2025 appellate decision returned the case to the trial court; the latest final retrial outcome has not been independently verified in this research batch."
+      ],
+      "explanation": "The available source documents the January 2025 remand, not a later final retrial judgment. The case must remain procedurally open until a primary Turkish court record or reliable updated report is obtained.",
+      "visibility": "hindsight",
+      "difficulty": "high",
+      "learningObjective": "Recognize and report research gaps rather than inventing a final outcome.",
+      "sourceIds": [
+        "thodex-src-002"
+      ]
+    },
+    {
+      "id": "thodex-exam-006",
+      "prompt": "What is the strongest practical lesson for users of a custodial exchange?",
+      "options": [
+        "Treat withdrawal availability and clear custody information as important counterparty-risk checks.",
+        "Assume a popular exchange cannot fail.",
+        "Ignore a prolonged withdrawal halt if social-media accounts remain active.",
+        "Treat promotional partnerships as proof of solvency."
+      ],
+      "defensibleAnswers": [
+        "Treat withdrawal availability and clear custody information as important counterparty-risk checks."
+      ],
+      "explanation": "The publicly reported withdrawal unavailability and website outage were direct customer-facing signals. They do not alone establish the entire cause, but they justify caution about leaving assets with a custodian that cannot process withdrawals.",
+      "visibility": "during_incident",
+      "difficulty": "medium",
+      "learningObjective": "Apply operational-risk lessons from exchange failure.",
+      "sourceIds": [
+        "thodex-src-001"
+      ]
+    }
+  ]
 }

@@ -1,0 +1,60 @@
+CRYPTO GRAVEYARD — PHASE 4: GATE CINEMATIC + CORONER EMERGENCE
+=================================================================
+
+This is a real implementation batch, not a concept board.
+
+REPLACES
+--------
+- index.html
+- src/js/main.js
+
+ADDS
+----
+- src/css/gate-cinematic.css
+- assets/gate-leaf.svg
+- assets/coroner-emerging.png
+
+PRESERVES
+---------
+- Existing data/cases JSON and index
+- Existing research and schema files
+- Existing data-loader.js and nav.js
+- Existing scene architecture and other stylesheets
+- Existing cemetery environment artwork
+
+INSTALL
+-------
+1. Stop the local server with Ctrl+C.
+2. Back up these files:
+   index.html
+   src/js/main.js
+3. Extract this ZIP into C:\dev\crypto-graveyard and allow replacement.
+4. Start the server:
+   cd C:\dev\crypto-graveyard
+   npx http-server . -p 8000
+5. Hard refresh the browser with Ctrl+Shift+R.
+
+WHAT TO TEST
+------------
+- Open the Cemetery entrance scene.
+- Click "Begin the Visit".
+- The title and captions should change sequentially, with a fade between captions.
+- The gate lock should glow and release.
+- The two wrought-iron leaves should swing open in opposite directions.
+- The background should slowly push forward.
+- The Coroner illustration should rise from the grave.
+- Only one dialogue panel should be visible during the Coroner's welcome.
+- "Enter the grounds" should switch to the grounds scene.
+- "Skip cinematic" should jump to the final Coroner welcome.
+- Sound is OFF by default. The Sound button enables simple synthesized atmospheric cues.
+
+IMPORTANT LIMITATIONS
+---------------------
+- The gate panels are bespoke SVG artwork animated in 3D CSS transforms. They are not a pre-rendered film.
+- The Coroner is a newly generated illustrated pose with a rise animation. It is not yet a frame-by-frame skeletal character rig; facial acting, independent arm/lantern movement, and multiple body poses are still future animation work.
+- The sound cues are synthesized browser tones, not a finished recorded sound design.
+- The existing cemetery environment background is reused. This batch does not replace the full cemetery environment.
+- The ground disturbance is a layered effect; detailed soil fracture simulation is a later polish task.
+- Test desktop and mobile. The mobile layout adapts the Coroner/dialogue composition.
+
+Do not commit or push until the owner reviews the experience.

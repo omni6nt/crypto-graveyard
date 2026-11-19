@@ -1,0 +1,430 @@
+{
+  "id": "celsius",
+  "name": "Celsius Network",
+  "shortDescription": "Celsius halted withdrawals in June 2022 and entered bankruptcy after misleading customers about risk, profitability and its proprietary token.",
+  "classification": "Crypto lending platform collapse; founder pleaded guilty to fraud and received a prison sentence",
+  "researchCutoff": "2026-11-19",
+  "identity": {
+    "description": "Celsius Network operated a centralized crypto lending and yield platform. Customers deposited digital assets and received interest or rewards; the company deployed customer assets into lending and investment strategies. Founder and CEO Alexander Mashinsky marketed Celsius as a safe alternative to traditional banking. Celsius also issued its proprietary CEL token, whose price and market activity became part of the criminal case against Mashinsky.",
+    "sourceIds": [
+      "celsius-src-001",
+      "celsius-src-002"
+    ]
+  },
+  "background": {
+    "description": "Celsius grew by offering attractive yields and messaging that customer assets were safe while earning rewards. The DOJ later described the business as a risky investment fund rather than the safe, bank-like service represented in Mashinsky's public marketing. Celsius also used customer assets in its business and, according to the DOJ, some customer deposits funded purchases intended to support CEL's price.",
+    "sourceIds": [
+      "celsius-src-001",
+      "celsius-src-002"
+    ]
+  },
+  "incident": {
+    "description": "On June 12, 2022, Celsius halted customer withdrawals, leaving approximately $4.7 billion in customer assets inaccessible, according to DOJ. Celsius filed for Chapter 11 bankruptcy on July 13, 2022. Mashinsky pleaded guilty on December 3, 2024 to commodities fraud and securities fraud, including misleading customers about Celsius's business and manipulating CEL's price while secretly selling his own holdings. On May 8, 2025, he was sentenced to 12 years in prison. Celsius's reorganization plan became effective January 31, 2024, and the company began creditor distributions and wound down its retail platform.",
+    "claimType": "court_finding",
+    "sourceIds": [
+      "celsius-src-001",
+      "celsius-src-002",
+      "celsius-src-003",
+      "celsius-src-004",
+      "celsius-src-005"
+    ]
+  },
+  "causeAnalysis": {
+    "description": "Analysis: Celsius combined custodial control of customer assets, high-yield promises, opaque and risky investment strategies, and a proprietary token whose market price was affected by company activity. The criminal case established that Mashinsky made material misrepresentations and participated in CEL manipulation. A rapid liquidity shock exposed the mismatch between customer expectations of access and the platform's ability to honor withdrawals. The case does not mean every yield platform operates identically; it demonstrates why custody, asset-liability management, disclosures and conflicts involving an issuer's own token matter.",
+    "sourceIds": [
+      "celsius-src-001",
+      "celsius-src-002"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "Celsius Network was founded and began building a crypto lending and yield platform.",
+      "claimType": "documented_fact",
+      "sourceIds": [
+        "celsius-src-001"
+      ]
+    },
+    {
+      "date": "2018",
+      "event": "Mashinsky and Celsius began the period of conduct later described in the criminal case as a years-long scheme to mislead customers and manipulate CEL.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "celsius-src-002"
+      ]
+    },
+    {
+      "date": "2021-09",
+      "event": "Celsius reached approximately $25 billion in assets at its peak, according to the DOJ sentencing release.",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "celsius-src-001"
+      ]
+    },
+    {
+      "date": "2022-06-12",
+      "event": "Celsius halted customer withdrawals; approximately $4.7 billion in customer assets were inaccessible.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "celsius-src-001",
+        "celsius-src-002"
+      ]
+    },
+    {
+      "date": "2022-07-13",
+      "event": "Celsius filed for Chapter 11 bankruptcy.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "celsius-src-001"
+      ]
+    },
+    {
+      "date": "2023-11-09",
+      "event": "The bankruptcy court confirmed the Chapter 11 plan; the plan later became effective January 31, 2024.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "celsius-src-005"
+      ]
+    },
+    {
+      "date": "2024-01-31",
+      "event": "Celsius emerged from Chapter 11 and commenced distributions under the plan.",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "celsius-src-005"
+      ]
+    },
+    {
+      "date": "2024-12-03",
+      "event": "Mashinsky pleaded guilty to commodities fraud and securities fraud.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "celsius-src-002"
+      ]
+    },
+    {
+      "date": "2025-05-08",
+      "event": "Mashinsky was sentenced to 12 years in prison and ordered to forfeit $48,393,446.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "celsius-src-001"
+      ]
+    },
+    {
+      "date": "2026-04-28",
+      "event": "A stipulated FTC order resolving the remaining FTC matter with Mashinsky was filed; the order also records that Celsius had emerged from bankruptcy and begun creditor payments.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "celsius-src-003"
+      ]
+    }
+  ],
+  "warningSigns": [
+    {
+      "title": "Bank-like safety claims without bank protections",
+      "description": "Mashinsky marketed Celsius as a safe alternative to a bank while customers deposited crypto assets.",
+      "evidenceAvailable": "The marketing was public. Users could ask whether deposits were insured, segregated, withdrawable on demand and exposed to lending risk.",
+      "visibility": "pre_incident",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "celsius-src-001",
+        "celsius-src-002"
+      ]
+    },
+    {
+      "title": "High yield with opaque underlying risk",
+      "description": "Celsius offered attractive rewards while deploying customer assets into risky strategies.",
+      "evidenceAvailable": "The yield rates were public; the full portfolio and risk position were not necessarily visible to customers.",
+      "visibility": "pre_incident",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "celsius-src-001"
+      ]
+    },
+    {
+      "title": "Proprietary token conflict",
+      "description": "Celsius's CEL token price was supported by company purchases, and DOJ said customer deposits were sometimes used for purchases.",
+      "evidenceAvailable": "The full manipulation and Mashinsky's sales were established through later criminal proceedings, not necessarily visible to customers in real time.",
+      "visibility": "hindsight",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "celsius-src-001",
+        "celsius-src-002"
+      ]
+    },
+    {
+      "title": "Executive withdrawals before customer halt",
+      "description": "DOJ said Mashinsky withdrew about $8 million of his own non-CEL assets before Celsius halted withdrawals.",
+      "evidenceAvailable": "This information became public through the criminal case; ordinary customers could not necessarily observe executive account activity.",
+      "visibility": "hindsight",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "celsius-src-002"
+      ]
+    },
+    {
+      "title": "Withdrawal freeze",
+      "description": "Celsius halted all customer withdrawals on June 12, 2022.",
+      "evidenceAvailable": "The halt was directly observable and represented an acute liquidity and custody crisis.",
+      "visibility": "during_incident",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "celsius-src-001",
+        "celsius-src-002"
+      ]
+    }
+  ],
+  "aftermath": {
+    "description": "Celsius's Chapter 11 plan became effective January 31, 2024. The company emerged from bankruptcy, began distributing cryptocurrency, cash and, for some creditors, equity in a reorganized mining business; its apps were shut down February 29, 2024. Stretto's distribution materials describe multiple classes and reasons some creditors' payments may be held. In the criminal case, Mashinsky pleaded guilty in December 2024 and was sentenced to 12 years in May 2025, with forfeiture of $48,393,446. An April 2026 FTC stipulated order resolved the remaining FTC matter with Mashinsky. The available sources establish ongoing distribution administration but do not support a claim that every creditor has been paid in full.",
+    "sourceIds": [
+      "celsius-src-001",
+      "celsius-src-002",
+      "celsius-src-003",
+      "celsius-src-004",
+      "celsius-src-005"
+    ]
+  },
+  "lessons": [
+    {
+      "audience": "users",
+      "lesson": "A crypto platform is not a bank merely because it uses bank-like language. Check insurance, custody, withdrawal rights, rehypothecation and the actual risks taken with deposited assets.",
+      "sourceIds": [
+        "celsius-src-001",
+        "celsius-src-002"
+      ]
+    },
+    {
+      "audience": "users",
+      "lesson": "High yields can reflect high risk. Ask how returns are generated and whether the platform can meet withdrawals during market stress.",
+      "sourceIds": [
+        "celsius-src-001"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "Disclose the use of customer assets and conflicts involving proprietary tokens; do not use customer deposits to support a token price without clear authorization and disclosure.",
+      "sourceIds": [
+        "celsius-src-001",
+        "celsius-src-002"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "Design liquidity and asset-liability controls for stressed withdrawal scenarios, not just ordinary market conditions.",
+      "sourceIds": [
+        "celsius-src-001",
+        "celsius-src-005"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "celsius-src-001",
+      "title": "Founder of Celsius Sentenced to 12 Years for Fraud and Market Manipulation",
+      "publisher": "U.S. Department of Justice",
+      "author": null,
+      "date": "2025-05-08",
+      "url": "https://www.justice.gov/usao-sdny/pr/founder-celsius-sentenced-12-years-fraud-and-market-manipulation",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Mashinsky guilty plea and 12-year sentence",
+        "False safety/profitability claims",
+        "CEL price manipulation",
+        "June 12 withdrawal halt and $4.7bn customer assets inaccessible",
+        "July 13 bankruptcy"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "celsius-src-002",
+      "title": "Celsius Founder and Former CEO Alexander Mashinsky Pleads Guilty",
+      "publisher": "U.S. Department of Justice",
+      "author": null,
+      "date": "2024-12-03",
+      "url": "https://www.justice.gov/usao-sdny/pr/celsius-founder-and-former-ceo-alexander-mashinsky-pleads-guilty-multi-billion-dollar",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Guilty plea to commodities and securities fraud",
+        "Customer fund use and CEL manipulation scheme",
+        "$8m personal withdrawals before platform collapse"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "celsius-src-003",
+      "title": "Stipulated Order for Permanent Injunction, Monetary Judgment and Other Relief against Alexander Mashinsky",
+      "publisher": "Federal Trade Commission / U.S. District Court SDNY",
+      "author": null,
+      "date": "2026-04-28",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/CelsiusNetworkLLC-StipulatedOrder.pdf",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "2026 FTC stipulated order with Mashinsky",
+        "Celsius corporate bankruptcy emergence and payments to creditors",
+        "Corporate suspended monetary judgment and conditions"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "celsius-src-004",
+      "title": "Second Distribution — Celsius Distributions",
+      "publisher": "Stretto, claims and distribution administrator",
+      "author": null,
+      "date": "2024-11-27",
+      "url": "https://celsiusdistribution.stretto.com/support/solutions/articles/153000225952-second-distribution",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Approximately $127m litigation recovery distribution",
+        "Eligible and ineligible claim classes",
+        "Reasons distributions may be held"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "celsius-src-005",
+      "title": "Plan Administrator's Update on Cash Distributions and Celsius Distribution Resources",
+      "publisher": "Stretto / Celsius post-effective-date debtors",
+      "author": null,
+      "date": "2025-04-28",
+      "url": "https://stretto-celsius.freshdesk.com/support/solutions/articles/153000147019-celsius-network-dissolution-and-distribution",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Plan effective date Jan 31 2024",
+        "App shutdown Feb 29 2024",
+        "Distribution process and reorganized mining company"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    }
+  ],
+  "intuitionReferences": [],
+  "examination": [
+    {
+      "id": "celsius-exam-001",
+      "prompt": "How did Celsius market itself to customers?",
+      "options": [
+        "As a government-insured bank.",
+        "As a safe place to deposit crypto and earn yield, with Mashinsky repeatedly making safety and profitability claims.",
+        "As a non-custodial wallet where it never controlled assets.",
+        "As a central bank."
+      ],
+      "defensibleAnswers": [
+        "As a safe place to deposit crypto and earn yield, with Mashinsky repeatedly making safety and profitability claims."
+      ],
+      "explanation": "The DOJ records Mashinsky's marketing of Celsius as safer than a bank while customers deposited assets and received rewards. The key question is whether actual risk matched the marketing.",
+      "visibility": "pre_incident",
+      "difficulty": "low",
+      "learningObjective": "Compare marketing claims with business reality.",
+      "sourceIds": [
+        "celsius-src-001",
+        "celsius-src-002"
+      ]
+    },
+    {
+      "id": "celsius-exam-002",
+      "prompt": "What did Mashinsky admit by pleading guilty in December 2024?",
+      "options": [
+        "No wrongdoing of any kind.",
+        "Commodities fraud and securities fraud in connection with customer deception and CEL price manipulation.",
+        "Only a minor regulatory filing error.",
+        "A violation of traffic law."
+      ],
+      "defensibleAnswers": [
+        "Commodities fraud and securities fraud in connection with customer deception and CEL price manipulation."
+      ],
+      "explanation": "The DOJ describes his guilty plea to one count of commodities fraud and one count of securities fraud. This is an established legal outcome.",
+      "visibility": "hindsight",
+      "difficulty": "medium",
+      "learningObjective": "Identify the scope of the guilty plea.",
+      "sourceIds": [
+        "celsius-src-002"
+      ]
+    },
+    {
+      "id": "celsius-exam-003",
+      "prompt": "What did Celsius do on June 12, 2022?",
+      "options": [
+        "It distributed all customer assets.",
+        "It halted customer withdrawals, leaving about $4.7bn in customer crypto inaccessible according to DOJ.",
+        "It launched a new stablecoin.",
+        "It completed Chapter 11."
+      ],
+      "defensibleAnswers": [
+        "It halted customer withdrawals, leaving about $4.7bn in customer crypto inaccessible according to DOJ."
+      ],
+      "explanation": "The DOJ states that hundreds of thousands of customers had approximately $4.7 billion on the platform when withdrawals were halted. This was an acute liquidity event.",
+      "visibility": "during_incident",
+      "difficulty": "low",
+      "learningObjective": "Recognize an immediate custody and liquidity warning.",
+      "sourceIds": [
+        "celsius-src-001",
+        "celsius-src-002"
+      ]
+    },
+    {
+      "id": "celsius-exam-004",
+      "prompt": "What did the DOJ say about CEL token price support?",
+      "options": [
+        "The token price was never affected by company activity.",
+        "Mashinsky and others used purchases to artificially support CEL's price, sometimes using customer deposits, while Mashinsky sold CEL.",
+        "The price was guaranteed by a regulator.",
+        "CEL was not Celsius's token."
+      ],
+      "defensibleAnswers": [
+        "Mashinsky and others used purchases to artificially support CEL's price, sometimes using customer deposits, while Mashinsky sold CEL."
+      ],
+      "explanation": "The DOJ's sentencing release describes purchases to inflate CEL and Mashinsky's sales at artificially inflated prices. The guilty plea establishes his criminal responsibility for the admitted scheme.",
+      "visibility": "hindsight",
+      "difficulty": "high",
+      "learningObjective": "Understand conflicts involving a platform's proprietary token.",
+      "sourceIds": [
+        "celsius-src-001",
+        "celsius-src-002"
+      ]
+    },
+    {
+      "id": "celsius-exam-005",
+      "prompt": "What happened to Celsius after Chapter 11?",
+      "options": [
+        "It resumed the same retail lending business unchanged.",
+        "It emerged from Chapter 11 on January 31, 2024 under a plan with creditor distributions and a reorganized mining business; the apps were later shut down.",
+        "All creditors were automatically paid in full.",
+        "Its bankruptcy was dismissed without a plan."
+      ],
+      "defensibleAnswers": [
+        "It emerged from Chapter 11 on January 31, 2024 under a plan with creditor distributions and a reorganized mining business; the apps were later shut down."
+      ],
+      "explanation": "Stretto records the effective date and wind-down, including the app shutdown and ongoing distributions. Emergence from bankruptcy is not the same as full payment to every creditor.",
+      "visibility": "hindsight",
+      "difficulty": "medium",
+      "learningObjective": "Distinguish emergence from bankruptcy from complete recovery.",
+      "sourceIds": [
+        "celsius-src-005"
+      ]
+    },
+    {
+      "id": "celsius-exam-006",
+      "prompt": "Why might an eligible creditor's Celsius distribution be delayed?",
+      "options": [
+        "All creditors receive distributions on the same date regardless of claim status.",
+        "A claim may be unresolved, require compliance information, face litigation issues or be subject to jurisdictional restrictions.",
+        "The token price determines eligibility automatically.",
+        "Because all claims were rejected."
+      ],
+      "defensibleAnswers": [
+        "A claim may be unresolved, require compliance information, face litigation issues or be subject to jurisdictional restrictions."
+      ],
+      "explanation": "Stretto explains that unresolved litigation, claim status, missing compliance information and legal restrictions can hold back a distribution. Aggregate recovery statistics do not describe every creditor's position.",
+      "visibility": "hindsight",
+      "difficulty": "high",
+      "learningObjective": "Understand class-specific and claim-specific distribution mechanics.",
+      "sourceIds": [
+        "celsius-src-004"
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@
  * All color values are drawn from the approved palette.
  * Do not add colors outside this file without project-owner approval.
  *
- * Font loading: Cinzel and Merriweather are loaded in index.html via
+ * Font loading: Uncial Antiqua, Cinzel, and Merriweather are loaded in index.html via
  * <link rel="preconnect"> and <link rel="stylesheet"> pointing to
  * Google Fonts. This file only defines the font-family custom properties;
  * it does not load the fonts itself.
@@ -31,7 +31,8 @@
    * --font-narrative : Merriweather — body copy, case narrative text
    * --font-ui        : system sans-serif — controls, labels, dense evidence
    * ------------------------------------------------------------------ */
-  --font-display:   'Cinzel', 'Palatino Linotype', Georgia, serif;
+  --font-title:     'Pirata One', 'Palatino Linotype', Georgia, serif;
+  --font-display:   'Grenze Gotisch', 'Palatino Linotype', Georgia, serif;
   --font-narrative: 'Merriweather', Georgia, 'Times New Roman', serif;
   --font-ui:        system-ui, -apple-system, BlinkMacSystemFont,
                     'Segoe UI', Roboto, Helvetica, Arial, sans-serif;

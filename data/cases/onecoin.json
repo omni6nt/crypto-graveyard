@@ -1,34 +1,409 @@
 {
   "id": "onecoin",
   "name": "OneCoin",
-  "shortDescription": "[PLACEHOLDER — research required]",
-  "classification": "[PLACEHOLDER — research required]",
-  "researchCutoff": "[PLACEHOLDER — research required]",
+  "shortDescription": "OneCoin was a fraudulent cryptocurrency investment scheme distributed through a global MLM network, causing billions in reported investor losses.",
+  "classification": "Court-established international cryptocurrency pyramid scheme and fraud",
+  "researchCutoff": "2026-11-19",
   "identity": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "OneCoin Ltd. was founded in 2014 in Sofia, Bulgaria, by Ruja Ignatova and Karl Sebastian Greenwood. It marketed a purported cryptocurrency through a global multi-level-marketing network. Members bought packages and received commissions for recruiting others to purchase packages. U.S. prosecutors stated that more than three million people invested and that the scheme generated over $4 billion in sales during its operation.",
+    "sourceIds": [
+      "onecoin-src-001",
+      "onecoin-src-002"
+    ]
   },
   "background": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "OneCoin used the language and imagery of cryptocurrency, including claims that it could become a 'Bitcoin killer'. Its commercial distribution depended heavily on package purchases and recruitment commissions. The DOJ's prosecution described the product as a fraudulent cryptocurrency and pyramid scheme; this classification is supported by guilty plea and sentencing records involving co-founder Greenwood, rather than merely by online criticism.",
+    "sourceIds": [
+      "onecoin-src-001",
+      "onecoin-src-002"
+    ]
   },
   "incident": {
-    "description": "[PLACEHOLDER — research required]",
-    "claimType": "[PLACEHOLDER]",
-    "sourceIds": []
+    "description": "Between 2014 and 2019, OneCoin marketed packages globally and raised more than $4 billion from investors, according to DOJ. Co-founder Karl Sebastian Greenwood pleaded guilty to wire fraud and money laundering in December 2022 and was sentenced to 20 years in September 2023. Co-founder Ruja Ignatova was charged in the United States in 2017, remains at large according to the FBI's June 2026 update, and is subject to a reward of up to $5 million for information leading to her arrest and/or conviction. In April 2026, DOJ opened a remission process using more than $40 million in forfeited assets; the filing deadline passed June 30, 2026, and the administrator says no distribution date is available.",
+    "claimType": "court_finding",
+    "sourceIds": [
+      "onecoin-src-001",
+      "onecoin-src-002",
+      "onecoin-src-003",
+      "onecoin-src-004",
+      "onecoin-src-005"
+    ]
   },
   "causeAnalysis": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Analysis: OneCoin's growth relied on an MLM incentive structure that rewarded recruitment and package sales, while the purported cryptocurrency's technical claims were not supported by the transparent, independently verifiable market infrastructure investors would expect from an open crypto network. The DOJ's court records establish the fraud and pyramid-scheme character of the enterprise. This case should not be flattened into a generic 'bad token' story: the recruitment model, package economics, representations about the product and the lack of independent verification were central.",
+    "sourceIds": [
+      "onecoin-src-001",
+      "onecoin-src-002"
+    ]
   },
-  "timeline": [],
-  "warningSigns": [],
+  "timeline": [
+    {
+      "date": "2014",
+      "event": "OneCoin was co-founded and began operating from Sofia, Bulgaria.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "onecoin-src-001",
+        "onecoin-src-002"
+      ]
+    },
+    {
+      "date": "2014-2016",
+      "event": "DOJ court filings state that OneCoin generated more than €4 billion in sales and promoted the scheme to millions of participants.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "onecoin-src-001"
+      ]
+    },
+    {
+      "date": "2015",
+      "event": "OneCoin began operating in the United States, according to DOJ court filings.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "onecoin-src-002"
+      ]
+    },
+    {
+      "date": "2017-10-12",
+      "event": "Ruja Ignatova was charged in the U.S. District Court for the Southern District of New York and a federal warrant was issued.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "onecoin-src-003"
+      ]
+    },
+    {
+      "date": "2018-10",
+      "event": "Greenwood was arrested in Thailand and extradited to the United States, according to the FBI.",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "onecoin-src-003"
+      ]
+    },
+    {
+      "date": "2022-12-16",
+      "event": "Greenwood pleaded guilty to wire fraud and money laundering charges.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "onecoin-src-001"
+      ]
+    },
+    {
+      "date": "2023-09-12",
+      "event": "Greenwood was sentenced to 20 years in prison.",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "onecoin-src-002"
+      ]
+    },
+    {
+      "date": "2026-04-13",
+      "event": "DOJ announced a remission process for eligible victims using more than $40 million in forfeited assets.",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "onecoin-src-004"
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "event": "The OneCoin remission petition deadline passed; the administrator stated that no distribution date was available.",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "onecoin-src-005"
+      ]
+    }
+  ],
+  "warningSigns": [
+    {
+      "title": "Recruitment-based commissions",
+      "description": "Members received commissions for recruiting others to purchase OneCoin packages.",
+      "evidenceAvailable": "The MLM incentive structure was a visible part of the sales model and could have prompted questions about whether growth depended more on recruitment than genuine use.",
+      "visibility": "pre_incident",
+      "claimType": "documented_fact",
+      "sourceIds": [
+        "onecoin-src-001"
+      ]
+    },
+    {
+      "title": "Package sales presented as cryptocurrency acquisition",
+      "description": "Customers bought packages that generated OneCoin tokens and were encouraged to resell or recruit.",
+      "evidenceAvailable": "The package-based sales model was public; buyers could ask for independently verifiable ownership, transferability and redemption evidence.",
+      "visibility": "pre_incident",
+      "claimType": "documented_fact",
+      "sourceIds": [
+        "onecoin-src-001",
+        "onecoin-src-002"
+      ]
+    },
+    {
+      "title": "Grandiose 'Bitcoin killer' positioning",
+      "description": "OneCoin was promoted as a rival capable of replacing Bitcoin.",
+      "evidenceAvailable": "The claim was promotional and observable; it should have been tested against verifiable technology, liquidity and adoption rather than accepted as a forecast.",
+      "visibility": "pre_incident",
+      "claimType": "official_statement",
+      "sourceIds": [
+        "onecoin-src-002"
+      ]
+    },
+    {
+      "title": "Lack of independently verifiable infrastructure",
+      "description": "The legal record describes a fraudulent cryptocurrency; investors lacked the independent verification expected of a transparent public blockchain.",
+      "evidenceAvailable": "The technical limitations became clearer through investigations and court proceedings; the precise technical audit evidence should be added before public release.",
+      "visibility": "hindsight",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "onecoin-src-001",
+        "onecoin-src-002"
+      ]
+    },
+    {
+      "title": "Founder absconded and U.S. charges followed",
+      "description": "Ignatova was charged in 2017 and remains at large according to the FBI.",
+      "evidenceAvailable": "The charges and wanted status became public after the scheme had grown; they are hindsight legal developments, not early warnings available to all purchasers.",
+      "visibility": "hindsight",
+      "claimType": "court_finding",
+      "sourceIds": [
+        "onecoin-src-003"
+      ]
+    }
+  ],
   "aftermath": {
-    "description": "[PLACEHOLDER — research required]",
-    "sourceIds": []
+    "description": "Greenwood pleaded guilty in December 2022 and was sentenced to 20 years in September 2023. Ruja Ignatova remains at large according to the FBI's June 25, 2026 update; the U.S. reward is up to $5 million. DOJ launched a remission process in April 2026 using more than $40 million in forfeited assets. Eligible petitioners had to have purchased OneCoin between 2014 and 2019 and experienced a net loss after accounting for completed withdrawals. The deadline was June 30, 2026; the administrator's FAQ says the filing deadline has passed and no distribution date is available. Filing does not guarantee payment.",
+    "sourceIds": [
+      "onecoin-src-002",
+      "onecoin-src-003",
+      "onecoin-src-004",
+      "onecoin-src-005"
+    ]
   },
-  "lessons": [],
-  "sources": [],
+  "lessons": [
+    {
+      "audience": "users",
+      "lesson": "Evaluate whether a crypto project has independently verifiable technology, transferability, liquidity and real-world utility rather than relying on promotional claims or private dashboards.",
+      "sourceIds": [
+        "onecoin-src-001",
+        "onecoin-src-002"
+      ]
+    },
+    {
+      "audience": "users",
+      "lesson": "Be cautious when compensation and status depend heavily on recruiting new purchasers rather than demand for a usable product.",
+      "sourceIds": [
+        "onecoin-src-001"
+      ]
+    },
+    {
+      "audience": "builders",
+      "lesson": "Do not market a product as a decentralized cryptocurrency unless users can independently verify the ledger, supply, transfer rules and custody arrangements.",
+      "sourceIds": [
+        "onecoin-src-001",
+        "onecoin-src-002"
+      ]
+    },
+    {
+      "audience": "users",
+      "lesson": "When a fraud recovery program is announced, verify eligibility, deadlines and distribution status through the official administrator; a petition is not a guarantee of payment.",
+      "sourceIds": [
+        "onecoin-src-004",
+        "onecoin-src-005"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "onecoin-src-001",
+      "title": "OneCoin Co-Founder Pleads Guilty to Multi-Billion-Dollar Cryptocurrency Pyramid Scheme",
+      "publisher": "U.S. Department of Justice",
+      "author": null,
+      "date": "2022-12-16",
+      "url": "https://www.justice.gov/usao-sdny/pr/co-founder-multi-billion-dollar-cryptocurrency-pyramid-scheme-onecoin-pleads-guilty",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "OneCoin operating model; MLM package sales; Greenwood guilty plea; more than $4bn invested"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "DOJ release describing plea and statements made in court."
+    },
+    {
+      "id": "onecoin-src-002",
+      "title": "OneCoin Co-Founder Sentenced to 20 Years in Prison",
+      "publisher": "U.S. Department of Justice",
+      "author": null,
+      "date": "2023-09-12",
+      "url": "https://www.justice.gov/usao-sdny/pr/co-founder-multibillion-dollar-cryptocurrency-scheme-onecoin-sentenced-20-years-prison",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Greenwood 20-year sentence; 3.5 million victims; over $4bn; OneCoin worthless according to prosecution and court record"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "onecoin-src-003",
+      "title": "Compensation for Victims of OneCoin's Cryptocurrency Investment Fraud",
+      "publisher": "Federal Bureau of Investigation",
+      "author": null,
+      "date": "2026-06-25",
+      "url": "https://www.fbi.gov/news/stories/compensation-for-victims-of-onecoin-cryptocurrency-investment-fraud",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Ignatova remains at large; $5m reward; DOJ remission scheme; more than $40m forfeited assets; purchase window and June 30 2026 deadline"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "onecoin-src-004",
+      "title": "Justice Department Announces Compensation Process for OneCoin Fraud Victims",
+      "publisher": "U.S. Department of Justice",
+      "author": null,
+      "date": "2026-04-13",
+      "url": "https://www.justice.gov/opa/pr/justice-department-announces-compensation-process-onecoin-fraud-victims-funds-recovered",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "DOJ remission process; over $40m forfeited assets; 2014-2019 victim eligibility; deadline"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": null
+    },
+    {
+      "id": "onecoin-src-005",
+      "title": "OneCoin Remission Program FAQ",
+      "publisher": "DOJ-authorized Kroll Settlement Administration",
+      "author": null,
+      "date": "2026-06-30",
+      "url": "https://www.onecoinremission.com/faq",
+      "sourceType": "primary",
+      "claimsSupported": [
+        "Deadline passed; no distribution date available; claims reconsideration and eligibility criteria"
+      ],
+      "accessDate": "2026-11-19",
+      "reliabilityNotes": "DOJ-authorized administrator; operational program information, not a guarantee of payment."
+    }
+  ],
   "intuitionReferences": [],
-  "examination": []
+  "examination": [
+    {
+      "id": "onecoin-exam-001",
+      "prompt": "How did OneCoin primarily expand its customer base?",
+      "options": [
+        "Through a permissionless proof-of-work mining network.",
+        "Through a multi-level-marketing network that rewarded members for recruiting purchasers of packages.",
+        "Through a regulated bank deposit network.",
+        "Through a public company share offering."
+      ],
+      "defensibleAnswers": [
+        "Through a multi-level-marketing network that rewarded members for recruiting purchasers of packages."
+      ],
+      "explanation": "DOJ describes OneCoin's MLM structure and package commissions. Recruitment incentives were central to growth and should be evaluated separately from claims about technological utility.",
+      "visibility": "pre_incident",
+      "difficulty": "low",
+      "learningObjective": "Identify the distribution and incentive model.",
+      "sourceIds": [
+        "onecoin-src-001"
+      ]
+    },
+    {
+      "id": "onecoin-exam-002",
+      "prompt": "What was a fundamental verification problem with OneCoin?",
+      "options": [
+        "Its supply and blockchain were independently verifiable on a public network.",
+        "Investors were sold a purported cryptocurrency without the kind of transparent, independently verifiable blockchain and market infrastructure expected of a public cryptoasset.",
+        "It was fully backed by insured bank deposits.",
+        "It was issued by a central bank."
+      ],
+      "defensibleAnswers": [
+        "Investors were sold a purported cryptocurrency without the kind of transparent, independently verifiable blockchain and market infrastructure expected of a public cryptoasset."
+      ],
+      "explanation": "The DOJ case describes OneCoin as a fraudulent cryptocurrency and a pyramid scheme. The exact technical architecture requires deeper forensic sourcing; the practical lesson is not to accept a claimed blockchain or exchange listing without independent verification.",
+      "visibility": "pre_incident",
+      "difficulty": "high",
+      "learningObjective": "Assess technical transparency and independent verifiability.",
+      "sourceIds": [
+        "onecoin-src-001",
+        "onecoin-src-002"
+      ]
+    },
+    {
+      "id": "onecoin-exam-003",
+      "prompt": "What legal outcome applies to co-founder Karl Sebastian Greenwood?",
+      "options": [
+        "He was acquitted.",
+        "He pleaded guilty and was sentenced to 20 years in prison.",
+        "He remains an uncharged witness.",
+        "He received a civil fine only."
+      ],
+      "defensibleAnswers": [
+        "He pleaded guilty and was sentenced to 20 years in prison."
+      ],
+      "explanation": "DOJ records Greenwood's guilty plea in 2022 and 20-year sentence in 2023. This outcome is specific to Greenwood.",
+      "visibility": "hindsight",
+      "difficulty": "low",
+      "learningObjective": "Identify established legal outcomes.",
+      "sourceIds": [
+        "onecoin-src-001",
+        "onecoin-src-002"
+      ]
+    },
+    {
+      "id": "onecoin-exam-004",
+      "prompt": "What is the current status of Ruja Ignatova in the FBI's June 2026 update?",
+      "options": [
+        "She has been arrested and sentenced.",
+        "She remains at large, and the U.S. reward is up to $5 million for information leading to arrest and/or conviction.",
+        "She was acquitted.",
+        "She has become a DOJ remission administrator."
+      ],
+      "defensibleAnswers": [
+        "She remains at large, and the U.S. reward is up to $5 million for information leading to arrest and/or conviction."
+      ],
+      "explanation": "The FBI's June 25, 2026 update states that Ignatova remains at large and describes the reward. Do not confuse Greenwood's sentence with Ignatova's status.",
+      "visibility": "hindsight",
+      "difficulty": "medium",
+      "learningObjective": "Keep separate defendants' legal status distinct.",
+      "sourceIds": [
+        "onecoin-src-003"
+      ]
+    },
+    {
+      "id": "onecoin-exam-005",
+      "prompt": "What did the 2026 OneCoin remission program offer?",
+      "options": [
+        "Guaranteed full reimbursement to every person who ever heard of OneCoin.",
+        "A process for eligible people who purchased OneCoin between 2014 and 2019 and suffered net losses to petition for compensation from forfeited assets.",
+        "A new OneCoin token launch.",
+        "Automatic compensation without an application."
+      ],
+      "defensibleAnswers": [
+        "A process for eligible people who purchased OneCoin between 2014 and 2019 and suffered net losses to petition for compensation from forfeited assets."
+      ],
+      "explanation": "The DOJ describes more than $40 million in forfeited assets available for victim compensation and a defined eligibility window. Filing a petition does not guarantee payment.",
+      "visibility": "hindsight",
+      "difficulty": "medium",
+      "learningObjective": "Understand eligibility and limits of remission programs.",
+      "sourceIds": [
+        "onecoin-src-004",
+        "onecoin-src-005"
+      ]
+    },
+    {
+      "id": "onecoin-exam-006",
+      "prompt": "What was the filing deadline for the remission petition process?",
+      "options": [
+        "June 30, 2026; the administrator's FAQ says the deadline has passed and no distribution date is available.",
+        "December 31, 2030.",
+        "There was no deadline.",
+        "The deadline is the date of the next token listing."
+      ],
+      "defensibleAnswers": [
+        "June 30, 2026; the administrator's FAQ says the deadline has passed and no distribution date is available."
+      ],
+      "explanation": "The DOJ-authorized remission site says the filing deadline passed on June 30, 2026 and that no distribution date is available. Do not promise recovery or suggest the claims portal is still open.",
+      "visibility": "hindsight",
+      "difficulty": "high",
+      "learningObjective": "Interpret current victim-remission status accurately.",
+      "sourceIds": [
+        "onecoin-src-003",
+        "onecoin-src-005"
+      ]
+    }
+  ]
 }

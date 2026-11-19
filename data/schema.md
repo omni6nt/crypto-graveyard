@@ -179,13 +179,13 @@ Each object field has a `description` string and a `sourceIds` array. The `descr
   - `id` — string, unique within this case (e.g., `"ftx-exam-001"`)
   - `prompt` — string, the question posed to the visitor
   - `options` — string array, the answer choices
-  - `defensibleAnswers` — string array, indices or values of the correct answer(s)
+  - `defensibleAnswers` — string array containing the exact option text for each correct answer (canonical representation; do not store numeric indices)
   - `explanation` — string, why the answer is correct, what the evidence shows, and what a careful user or builder could have done
   - `visibility` — one of `"pre_incident"`, `"during_incident"`, `"hindsight"`
   - `difficulty` — one of `"low"`, `"medium"`, `"high"`
   - `learningObjective` — string
   - `sourceIds` — string array
-- **Constraints:** Every case must have 6–8 items before publication. Items must span relevant risk categories (governance and control, custody and counterparty risk, liquidity and leverage, technical and security risk, incentive and economic design, transparency and disclosure). Answers must be defensible and explained. Never ask a visitor to infer guilt from suspicious behaviour alone. See `CASE_RESEARCH_STANDARD.md` §9 for full examination design rules.
+- **Constraints:** Every case must have 6–8 items before publication. `defensibleAnswers` must contain exact strings that also appear in `options`; this avoids index drift if option order changes. Items must span relevant risk categories (governance and control, custody and counterparty risk, liquidity and leverage, technical and security risk, incentive and economic design, transparency and disclosure). Answers must be defensible and explained. Never ask a visitor to infer guilt from suspicious behaviour alone. See `CASE_RESEARCH_STANDARD.md` §9 for full examination design rules.
 
 ---
 
